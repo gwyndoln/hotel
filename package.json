@@ -1,0 +1,44 @@
+{
+  "name": "hotel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwyndoln/hotel.git"
+  },
+  "keywords": [
+    "scss",
+    "pug",
+    "jQuery"
+  ],
+  "author": "gwyndoln",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwyndoln/hotel/issues"
+  },
+  "homepage": "https://github.com/gwyndoln/hotel#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.2.0",
+    "css-minimizer-webpack-plugin": "^1.3.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "main": "webpack.config.js",
+  "description": ""
+}

@@ -21,5 +21,37 @@
 }
 
 /*Переменные для шрифтов*/
+
 $font-stack-regular: 'Conv_Montserrat-Regular', sans-serif;
 $font-stack-bold: 'Conv_Montserrat-Bold', sans-serif;
+
+/*Стили шрифтов для заголовков и текста*/
+
+body {
+    font-family: $font-stack-regular;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-shade-75;
+}
+
+h1 {
+    font-family: $font-stack-bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $dark-shade-100;
+}
+
+h2 {
+    font-family: $font-stack-bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: $dark-shade-100;
+}
+
+h3 {
+    font-family: $font-stack-bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: $dark-shade-100;
+}
+

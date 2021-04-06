@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Conv_Montserrat-Regular';
+	src: 
+        url('fonts/Montserrat-Regular.woff') format('woff'),
+        url('fonts/Montserrat-Regular.ttf') format('truetype'), 
+        url('fonts/Montserrat-Regular.svg') format('svg');
+    font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Montserrat-Bold';
+	src: 
+        url('fonts/Montserrat-Bold.woff') format('woff'), 
+        url('fonts/Montserrat-Bold.ttf') format('truetype'), 
+        url('fonts/Montserrat-Bold.svg') format('svg');
+    font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/*Переменные для шрифтов*/
+$font-stack-regular: 'Conv_Montserrat-Regular', sans-serif;
+$font-stack-bold: 'Conv_Montserrat-Bold', sans-serif;

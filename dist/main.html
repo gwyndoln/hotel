@@ -1,19 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
-  <body>
-<p>TEXT FIELD </p>
-<P>DEFAULT</P>
-<form>
-  <label for="email">
-    <input type="text" name="email" placeholder="Email">
-  </label>
-</form>
-    <h1>Hello</h1>
-  </body>
-</html>
+<head><script defer src="main.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ../node_modules/pug-loader/index.js):
+  Error: Can't resolve './components/text-field/text-field.pug' in '/home/zxc/Desktop/hotel/src'
+  
+  - Resolver.js:293 finishWithoutResolve
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:293:18
+  
+  - Resolver.js:362 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:362:15
+  
+  - Resolver.js:410 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - Resolver.js:410 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - DescriptionFilePlugin.js:87 
+    [hotel]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:87:43
+  
+  - Resolver.js:410 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - Resolver.js:410 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  - ModuleBuildError: Module build failed (from ../node_modules/pug-loader/index.js):
+  
+  - Error: Can't resolve './components/text-field/text-field.pug' in '/home/zxc/Desktop/hotel/src'
+  
+  - Resolver.js:293 finishWithoutResolve
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:293:18
+  
+  - Resolver.js:362 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:362:15
+  
+  - Resolver.js:410 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - Resolver.js:410 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - DescriptionFilePlugin.js:87 
+    [hotel]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:87:43
+  
+  - Resolver.js:410 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - Resolver.js:410 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  - NormalModule.js:675 processResult
+    [hotel]/[webpack]/lib/NormalModule.js:675:19
+  
+  - NormalModule.js:777 
+    [hotel]/[webpack]/lib/NormalModule.js:777:5
+  
+  - LoaderRunner.js:399 
+    [hotel]/[loader-runner]/lib/LoaderRunner.js:399:11
+  
+  - LoaderRunner.js:251 
+    [hotel]/[loader-runner]/lib/LoaderRunner.js:251:18
+  
+  - LoaderRunner.js:124 context.callback
+    [hotel]/[loader-runner]/lib/LoaderRunner.js:124:13
+  
+  - index.js:43 
+    [hotel]/[pug-loader]/index.js:43:22
+  
+  - Resolver.js:296 finishWithoutResolve
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:296:11
+  
+  - Resolver.js:362 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:362:15
+  
+  - Resolver.js:410 
+    [hotel]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - child-compiler.js:169 
+    [hotel]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:534 
+    [hotel]/[webpack]/lib/Compiler.js:534:11
+  
+  - Compiler.js:1087 
+    [hotel]/[webpack]/lib/Compiler.js:1087:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [hotel]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1083 
+    [hotel]/[webpack]/lib/Compiler.js:1083:33
+  
+  - Compilation.js:2424 
+    [hotel]/[webpack]/lib/Compilation.js:2424:11
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [hotel]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:2417 
+    [hotel]/[webpack]/lib/Compilation.js:2417:38
+  
+</pre>

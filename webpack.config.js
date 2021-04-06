@@ -16,17 +16,14 @@ module.exports = {
     filename: '[name].js',
   },
   optimization: {
-    splitChunks: {
-      chunks: 'all'
-    },
     minimizer: [
       new CssMinimizerPlugin(),
       new TerserPlugin(),
     ],
   },
   devServer: {
-    open: true,
-    hot: true,
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
     port: 8080,
   },
   plugins: [
@@ -34,7 +31,7 @@ module.exports = {
       template: 'index.pug',
       filename: '[name].html',
     }), //создаёт HTML на основе шаблона, помогает автоматически создавать html в dist и подключать туда скрипты
-    new CleanWebpackPlugin(), //очищает dist
+    //new CleanWebpackPlugin(), //очищает dist
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),

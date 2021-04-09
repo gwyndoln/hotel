@@ -1,0 +1,11 @@
+@import 'color-wrapper/color-wrapper';
+
+.color-container {
+  margin-top: 145px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  height: 610px;
+}

@@ -1,0 +1,15 @@
+.color-wrapper__desc {
+  width: 171px;
+  height: 56px;
+  h2 {
+    display: inline;
+    font-size: 19px;
+    line-height: 28px;
+  }
+  p {
+    display: inline;
+    font-size: 19px;
+    line-height: 28px;
+    color: $dark-100;
+  }
+}

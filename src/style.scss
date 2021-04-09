@@ -1,7 +1,6 @@
 @import '~normalize.css';
-@import './colors.scss';
-@import './fonts/fonts.scss';
-@import './components/text-field/text-field.scss';
-@import './ui-width.scss';
-@import './components/text-field/email-form/email-form.scss';
-@import './components/logo/logo.scss';
+@import 'styles/colors';
+@import 'styles/fonts';
+@import 'styles/ui-width';
+@import 'components/logo/logo';
+@import 'components/color-container/color-container';

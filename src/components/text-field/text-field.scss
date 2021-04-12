@@ -1,6 +1,10 @@
 .text-field {
-  width: 320px;
-  height: 44px;
+  width: 318px;
+  height: 42px;
   border: 1px solid $dark-25;
   border-radius: 4px;
+}
+
+.text-field__text {
+  margin: 12px 0 0 15px;
 }

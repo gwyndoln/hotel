@@ -28,27 +28,31 @@ $font-stack-bold: 'Conv_Montserrat-Bold', sans-serif;
 /*Стили шрифтов для заголовков и текста*/
 
 body {
+  margin: 0;
   font-family: $font-stack-regular;
   font-size: 14px;
   line-height: 24px;
   color: $dark-75;
 }
-
+p {
+  margin: 0;
+}
 h1 {
+  margin: 0;
   font-family: $font-stack-bold;
   font-size: 24px;
   line-height: 29px;
   color: $dark-100;
 }
-
 h2 {
+  margin: 0;
   font-family: $font-stack-bold;
   font-size: 19px;
   line-height: 23px;
   color: $dark-100;
 }
-
 h3 {
+  margin: 0;
   font-family: $font-stack-bold;
   font-size: 12px;
   line-height: 15px;

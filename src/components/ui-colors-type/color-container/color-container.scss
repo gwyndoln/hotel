@@ -1,8 +1,9 @@
 @import 'color-wrapper/color-wrapper';
 
 .color-container {
-  margin-top: 145px;
+  position: absolute;
   margin-left: 150px;
+  margin-top: 145px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

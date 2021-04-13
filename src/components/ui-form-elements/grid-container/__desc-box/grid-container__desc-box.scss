@@ -1,14 +1,15 @@
 .grid-container__desc-box {
   width: 320px;
   height: 65px;
-}
-.grid-container__desc-box .box {
-  display: flex;
-  justify-content: space-between;
-  height: 21px;
-}
-.grid-container__desc-box .box p {
-  color: $dark-50;
-  font-size: 12px;
-  line-height: 15px;
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    height: 21px;
+  }
+  .box p {
+    color: $dark-50;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

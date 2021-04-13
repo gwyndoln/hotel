@@ -1,5 +1,5 @@
-@import '../../text-field/text-field';
 @import '__desc-box/grid-container__desc-box';
+@import '../../text-field/text-field';
 @import '../../email-form/email-form';
 
 .grid-container {
@@ -12,5 +12,9 @@
   .text-field-hover {
     grid-column-start: 1;
     grid-row-start: 3;
+
+    .text-field {
+      border-color: $dark-50;
+    }
   }
 }

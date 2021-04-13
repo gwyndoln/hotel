@@ -1,6 +1,5 @@
-@import '__desc-box/grid-container__desc-box';
-@import '../../text-field/text-field';
-@import '../../form/form';
+@import '__text-field-hover/grid-container__text-field-hover';
+@import '__text-field-default/grid-container__text-field-default';
 
 .grid-container {
   margin-left: 141px;
@@ -8,19 +7,4 @@
   display: grid;
   grid-template-columns: 320px 126px 320px 72px 320px;
   grid-template-rows: 65px 20px 65px;
-
-  .text-field-hover {
-    grid-column-start: 1;
-    grid-row-start: 3;
-
-    .text-field {
-      border-color: $dark-50;
-    }
-  }
-
-  .text-field-default {
-    .form__input {
-      outline: none;
-    }
-  }
 }

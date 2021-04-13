@@ -1,13 +1,12 @@
-include __desc-box/grid-container__desc-box
-include ../../form/form
-include ../../text-field/text-field
+include __text-field-hover/grid-container__text-field-hover
+include __text-field-default/grid-container__text-field-default
 
 .grid-container
-  .text-field-default
-    +desc-box({title: 'TEXT FIELD', extra: 'DEFAULT'}) 
-      +form({placeholder: 'Email'})
-  .text-field-hover
-    +desc-box({title: 'TEXT FIELD', extra: 'HOVER / FOCUS'}) 
-      +text-field('This is pretty awesome')
-  .text-field-dropdown
-    +desc-box({title: 'DROPDOWN'}) 
+  +text-field-default
+  +text-field-hover
+  +text-field-dropdown
+  //
+    .text-field-dropdown
+    +desc-box({title: 'DROPDOWN'})
+  
+

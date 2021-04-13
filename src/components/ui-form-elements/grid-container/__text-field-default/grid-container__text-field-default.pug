@@ -1,0 +1,8 @@
+include ../__desc-box/grid-container__desc-box
+include ../../../form/form
+include ../../../text-field/text-field
+
+mixin text-field-default
+  .grid-container__text-field-default
+    +desc-box({title: 'TEXT FIELD', extra: 'DEFAULT'}) 
+      +form({placeholder: 'Email'})

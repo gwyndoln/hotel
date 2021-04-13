@@ -1,11 +1,16 @@
 @import '../../text-field/text-field';
 @import '__desc-box/grid-container__desc-box';
-@import '__email-form/grid-container__email-form';
+@import '../../email-form/email-form';
 
 .grid-container {
   margin-left: 141px;
   padding-top: 143px;
   display: grid;
   grid-template-columns: 320px 126px 320px 72px 320px;
-  grid-template-rows: 1579px;
+  grid-template-rows: 65px 20px 65px;
+
+  .text-field-hover {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
 }

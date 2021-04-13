@@ -1,11 +1,13 @@
 include __desc-box/grid-container__desc-box
-include ../../email-form/email-form
+include ../../form/form
 include ../../text-field/text-field
 
 .grid-container
   .text-field-default
     +desc-box({title: 'TEXT FIELD', extra: 'DEFAULT'}) 
-      +email-form
+      +form({placeholder: 'Email'})
   .text-field-hover
     +desc-box({title: 'TEXT FIELD', extra: 'HOVER / FOCUS'}) 
       +text-field('This is pretty awesome')
+  .text-field-dropdown
+    +desc-box({title: 'DROPDOWN'}) 

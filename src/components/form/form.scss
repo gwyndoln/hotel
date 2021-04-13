@@ -1,0 +1,5 @@
+@import '../text-field/text-field';
+
+.form__input::placeholder {
+  color: $dark-25;
+}

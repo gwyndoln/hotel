@@ -1,6 +1,6 @@
 @import '__desc-box/grid-container__desc-box';
 @import '../../text-field/text-field';
-@import '../../email-form/email-form';
+@import '../../form/form';
 
 .grid-container {
   margin-left: 141px;
@@ -15,6 +15,12 @@
 
     .text-field {
       border-color: $dark-50;
+    }
+  }
+
+  .text-field-default {
+    .form__input {
+      outline: none;
     }
   }
 }

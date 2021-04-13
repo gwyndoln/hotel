@@ -1,4 +1,7 @@
-include ../../text-field/text-field
+include __desc-box/grid-container__desc-box
+//include ../../text-field/text-field
 
 .grid-container 
-  +text-field('This is pretty awesome')
+  +desc-box({title: 'TEXT FIELD', extra: 'DEFAULT'}) 
+    include __email-form/grid-container__email-form
+  //+text-field('This is pretty awesome')

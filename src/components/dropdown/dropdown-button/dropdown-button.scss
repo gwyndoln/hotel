@@ -1,6 +1,7 @@
 @import '../../text-field/text-field';
 
 .dropdown-button {
+  @extend .text-field;
   display: flex;
   justify-content: space-between;
 }

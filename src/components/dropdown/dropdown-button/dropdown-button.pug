@@ -1,7 +1,11 @@
 mixin dropdown-button(options)
   -
-    var buttonClassName = 'dropdown-button text-field'
-    buttonClassName += options.mini ? ' dropdown-button_mini' : ''
+    var buttonClassName = 'dropdown-button' 
+    buttonClassName += 
+    options.mini ? ' dropdown-button_mini' 
+    : options.middle 
+    ? ' dropdown-button_middle' 
+    : ''
 
   div(class=buttonClassName)
     p= options.text

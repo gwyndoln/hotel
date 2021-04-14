@@ -1,9 +1,9 @@
 @import '../text-field/text-field';
 
-.form__input::placeholder {
+.input::placeholder {
   color: $dark-25;
 }
-.form__input:focus {
+.input:focus {
   outline: none;
   border-color: $dark-50;
 }

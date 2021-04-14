@@ -1,13 +1,13 @@
-.grid-container__desc-box {
+.desc-box {
   width: 320px;
   height: 65px;
 
-  .box {
+  .title-box {
     display: flex;
     justify-content: space-between;
     height: 21px;
   }
-  .box p {
+  .title-box p {
     color: $dark-50;
     font-size: 12px;
     line-height: 15px;

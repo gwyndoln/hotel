@@ -1,8 +1,7 @@
 @import '../../../text-field/text-field';
-@import '../../../form/form';
-@import '../__desc-box/grid-container__desc-box';
+@import '../../../desc-box/desc-box';
 
-.grid-container__text-field-hover {
+.text-field-hover {
   grid-column-start: 1;
   grid-row-start: 3;
 

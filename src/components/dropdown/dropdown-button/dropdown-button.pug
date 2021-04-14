@@ -1,2 +1,9 @@
-mixin dropdown-button(text)
-  div(class='dropdown-button text-field')= text 
+mixin dropdown-button(options)
+  -
+    var buttonClassName = 'dropdown-button text-field'
+    buttonClassName += options.mini ? ' dropdown-button_mini' : ''
+
+  div(class=buttonClassName)
+    p= options.text
+    .dropdown-button-box 
+      .dropdown-button__arrow

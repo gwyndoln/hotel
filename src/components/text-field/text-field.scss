@@ -3,5 +3,7 @@
   height: 44px;
   border: 1px solid $dark-25;
   border-radius: 4px;
+}
+.text-field p, .text-field::placeholder {
   padding: 8px 0px 7px 14px;
 }

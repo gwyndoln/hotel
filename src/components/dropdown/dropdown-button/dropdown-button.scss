@@ -1,14 +1,17 @@
 @import '../../text-field/text-field';
 
 .dropdown-button {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-
-.dropdown-button:after {
-  content: '';
-  position: absolute;
-  top: 13px;
-  left: 292px;
+.dropdown-button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 35px;
+}
+.dropdown-button__arrow {
   width: 9px;
   height: 9px;
   border: 2px solid;

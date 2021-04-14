@@ -1,0 +1,9 @@
+@import '../../../dropdown/dropdown-button_mini/dropdown-button_mini';
+@import '../../../desc-box/desc-box';
+
+.date-dropdown {
+  grid-column-start: 1;
+  grid-row-start: 9;
+  display: flex;
+  justify-content: space-between;
+}

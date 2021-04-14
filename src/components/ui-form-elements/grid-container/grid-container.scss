@@ -1,10 +1,11 @@
 @import 'text-field-hover/text-field-hover';
 @import 'text-field-default/text-field-default';
+@import 'dropdown-text-field/dropdown-text-field';
 
 .grid-container {
   margin-left: 141px;
-  padding-top: 143px;
+  padding-top: 141px;
   display: grid;
   grid-template-columns: 320px 126px 320px 72px 320px;
-  grid-template-rows: 65px 20px 65px;
+  grid-template-rows: 65px 20px 65px 20px 65px;
 }

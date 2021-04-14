@@ -1,0 +1,17 @@
+@import '../../text-field/text-field';
+
+.dropdown-button {
+  position: relative;
+}
+
+.dropdown-button:after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 292px;
+  width: 9px;
+  height: 9px;
+  border: 2px solid;
+  border-color: transparent $dark-50 $dark-50 transparent ;
+  transform: rotate(45deg);
+}

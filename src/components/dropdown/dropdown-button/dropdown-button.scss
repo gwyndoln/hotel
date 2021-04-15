@@ -1,21 +1,31 @@
 @import '../../text-field/text-field';
+@import 'button/button';
 
 .dropdown-button {
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
 }
-.dropdown-button-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 43px;
-  height: 19px;
+.dropdown-button-icon {
+  width: 44px;
+  height: 29px;
+  position: relative;
 }
-.dropdown-button__arrow {
-  width: 9px;
-  height: 9px;
-  border: 2px solid;
-  border-color: transparent $dark-50 $dark-50 transparent;
+.dropdown-button-arrow {
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  width: 8px;
+  height: 2px;
   transform: rotate(45deg);
+  background: $dark-50;
+}
+.dropdown-button-arrow::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  left: 6px;
+  top: -6px;
+  transform: rotate(180deg);
+  background: $dark-50;
 }

@@ -1,4 +1,4 @@
-@import '../text-field/text-field';
+@import '../../text-field/text-field';
 
 .input::placeholder {
   color: $dark-25;
@@ -6,4 +6,8 @@
 .input:focus {
   outline: none;
   border-color: $dark-50;
+}
+
+.hidden-label {
+  visibility: hidden;
 }

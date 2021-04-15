@@ -1,0 +1,57 @@
+@import '../input';
+@import '../../form';
+
+.sub-input {
+  .form {
+    position: relative;
+  }
+  input {
+    width: 266px;
+    padding-right: 44px;
+  }
+  .arrow-button {
+    position: absolute;
+    top: 0px;
+    left: 222px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .arrow-button:focus {
+    outline: none;
+  }
+  .button-icon {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 0px;
+    left: 0px;
+  }
+  .button-icon__arrow {
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    width: 13px;
+    height: 2px;
+    background: $purple-prime;
+  }
+  .button-icon__arrow::after, .button-icon__arrow::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 11px;
+    right: 1px;
+    background: $purple-prime;
+  }
+  .button-icon__arrow::after {
+    top: -8px;
+    transform: rotate(-45deg);
+  }
+  .button-icon__arrow::before {
+    top: -1.5px;
+    transform: rotate(45deg);
+  }
+}

@@ -1,10 +1,10 @@
 .desc-box {
-  .title-box {
+  .desc-box__title {
     display: flex;
     justify-content: space-between;
     height: 21px;
   }
-  .title-box p {
+  .desc-box__title p {
     color: $dark-50;
     font-size: 12px;
     line-height: 15px;

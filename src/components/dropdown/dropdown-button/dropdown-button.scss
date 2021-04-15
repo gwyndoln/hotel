@@ -1,16 +1,16 @@
 @import '../../text-field/text-field';
 
 .dropdown-button {
-  @extend .text-field;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .dropdown-button-box {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 43px;
-  height: 35px;
+  height: 19px;
 }
 .dropdown-button__arrow {
   width: 9px;

@@ -34,8 +34,11 @@ body {
   line-height: 24px;
   color: $dark-75;
 }
-p {
-  margin: 0;
+*, *:before, *:after {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
 }
 h1 {
   margin: 0;

@@ -1,0 +1,10 @@
+include ../input/input
+include ../form
+include ../../icons/button-arrow-icon/button-arrow-icon
+
+mixin sub-form
+  .sub-form
+    +form({})
+      +input({placeholder: 'Email'})
+      button(type='submit' value='' class='button arrow-button')
+        +button-arrow-icon

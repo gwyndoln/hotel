@@ -2,7 +2,8 @@
   .desc-box__title {
     display: flex;
     justify-content: space-between;
-    height: 21px;
+    height: 15px;
+    margin-bottom: 5px;
   }
   .desc-box__title p {
     color: $dark-50;

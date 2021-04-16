@@ -1,0 +1,23 @@
+@import '../input/input';
+@import '../form';
+@import '../../buttons/button/button';
+@import '../../icons/button-arrow-icon/button-arrow-icon';
+
+.sub-form {
+  .form {
+    position: relative;
+  }
+  input {
+    width: 266px;
+    padding-right: 44px;
+  }
+  .arrow-button {
+    position: absolute;
+    top: 0px;
+    left: 222px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    padding: 0;
+  }
+}

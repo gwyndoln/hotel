@@ -1,4 +1,4 @@
-include dropdown-button-arrow/dropdown-button-arrow
+include ../../icons/dropdown-arrow-icon/dropdown-arrow-icon
 
 mixin dropdown-button(options)
   -
@@ -12,4 +12,4 @@ mixin dropdown-button(options)
 
   button(type='button' value='' class=buttonClassName)
     p.dropdown-button__text= options.text
-    +dropdown-button-arrow({dark: isDark})
+    +dropdown-arrow-icon({dark: isDark})

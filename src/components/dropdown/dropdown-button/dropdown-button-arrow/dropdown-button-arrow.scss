@@ -1,0 +1,28 @@
+.dropdown-button-icon {
+  width: 44px;
+  height: 29px;
+  position: relative;
+}
+.dropdown-button-arrow {
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  width: 8px;
+  height: 2px;
+  transform: rotate(45deg);
+  background: $dark-50;
+}
+.dropdown-button-arrow::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  left: 6px;
+  top: -6px;
+  transform: rotate(180deg);
+  background: $dark-50;
+}
+.dropdown-button-arrow_dark, .dropdown-button-arrow_dark::after  {
+  background: $dark-75;
+
+}

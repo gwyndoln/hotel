@@ -1,6 +1,9 @@
+include dropdown-button-arrow/dropdown-button-arrow
+
 mixin dropdown-button(options)
   -
-    var buttonClassName = 'button dropdown-button text-field' 
+    var buttonClassName = 'button dropdown-button text-field'
+    var isDark = options.isDark
     buttonClassName += 
     options.mini ? ' text-field_mini' 
     : options.middle 
@@ -9,5 +12,4 @@ mixin dropdown-button(options)
 
   button(type='button' value='' class=buttonClassName)
     p.dropdown-button__text= options.text
-    .dropdown-button-icon
-      .dropdown-button-arrow
+    +dropdown-button-arrow({dark: isDark})

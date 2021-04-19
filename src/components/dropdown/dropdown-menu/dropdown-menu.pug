@@ -1,7 +1,13 @@
 include dropdown-menu__item/dropdown-menu__item
 
-mixin dropdown-menu
-  ul.dropdown-menu
-    +item('СПАЛЬНИ', 2)
-    +item('КРОВАТИ', 2)
-    +item('ВАННЫЕ КОМНАТЫ', 0, true)
+mixin dropdown-menu(options)
+  -
+    var menuClassName = 'dropdown dropdown-menu text-field'
+    menuClassName += 
+    options.mini ? ' text-field_mini' 
+    : options.middle 
+    ? ' text-field_middle' 
+    : ''
+
+  ul(class = menuClassName)
+    block

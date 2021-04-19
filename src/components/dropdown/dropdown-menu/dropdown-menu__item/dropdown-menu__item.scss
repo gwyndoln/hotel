@@ -5,5 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 6px 0px 14px;
+  padding: 7px 6px 0 0;
+}
+.dropdown-menu__item:first-child {
+  margin-top: -9px;
 }

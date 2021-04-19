@@ -4,4 +4,8 @@ include ../../../dropdown/dropdown
 .dropdown-expanded
   +desc-box({title:'DROPDOWN', extra: 'EXPANDED'})
     +dropdown
-    
+      +dropdown-button({text: '2 спальни, 2 кровати...', middle: true, isDark: true})
+      +dropdown-menu({middle: true})
+        +item('СПАЛЬНИ', 2)
+        +item('КРОВАТИ', 2)
+        +item('ВАННЫЕ КОМНАТЫ', 0, true)

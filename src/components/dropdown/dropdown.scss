@@ -1,2 +1,11 @@
 @import 'dropdown-button/dropdown-button';
 @import 'dropdown-menu/dropdown-menu';
+
+.dropdown {
+  border-color: $dark-50;
+
+  .dropdown-button {
+    border-radius: 2px 2px 0 0;
+    border-color: $dark-50;
+  }
+}

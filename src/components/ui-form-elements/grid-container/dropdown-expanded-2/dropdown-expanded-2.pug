@@ -1,0 +1,12 @@
+include ../../../desc-box/desc-box
+include ../../../dropdown/dropdown
+
+.dropdown-expanded-2 
+  +desc-box({title:'DROPDOWN'})
+    +dropdown
+      +dropdown-button({text: 'Сколько гостей...', isDark: true})
+      +dropdown-menu
+        +item('ВЗРОСЛЫЕ', 0, true)
+        +item('ДЕТИ', 0, true)
+        +item('МЛАДЕНЦЫ', 0, true)
+        +accept('', 'ПРИМЕНИТЬ')

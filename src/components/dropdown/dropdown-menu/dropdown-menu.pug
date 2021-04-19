@@ -1,13 +1,13 @@
 include dropdown-menu__item/dropdown-menu__item
+include dropdown-menu_acceptable/dropdown-menu_acceptable
 
 mixin dropdown-menu(options)
+  if !options
+    - options = {}
   -
     var menuClassName = 'dropdown dropdown-menu text-field'
     menuClassName += 
-    options.mini ? ' text-field_mini' 
-    : options.middle 
-    ? ' text-field_middle' 
-    : ''
+    options.middle ? ' text-field_middle' : ' dropdown-menu_acceptable'
 
   ul(class = menuClassName)
     block

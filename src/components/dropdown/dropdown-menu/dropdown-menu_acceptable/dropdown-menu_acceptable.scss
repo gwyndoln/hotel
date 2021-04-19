@@ -1,0 +1,16 @@
+@import '../../../buttons/button/button';
+
+.dropdown-menu_acceptable {
+  .accept-box {
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 6px 19px 13px;
+  }
+}
+.clear-button, .accept-button {
+  border: none;
+}
+.clear-button__text, .accept-button__text {
+  color: $purple-prime;
+}

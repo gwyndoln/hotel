@@ -1,9 +1,7 @@
+include dropdown-menu__item/dropdown-menu__item
+
 mixin dropdown-menu
-  div(class='dropdown-menu ')
-    li.dropdown-menu-list
-      h3 СПАЛЬНИ
-      .count-block
-        button(type='button' class='button minus-button')
-        h3 2
-        button(type='button' class='button plus-button')
-          .plus-button__plug
+  ul.dropdown-menu
+    +item('СПАЛЬНИ', 2)
+    +item('КРОВАТИ', 2)
+    +item('ВАННЫЕ КОМНАТЫ', 0, true)

@@ -1,62 +1,6 @@
-@import '../../text-field/text-field';
+@import 'dropdown-menu__item/dropdown-menu__item';
 
-.dropdown-menu-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 7px 7px 7px 15px;
-}
-.count-block {
-  width: 92px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.minus-button { //@import button class
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $dark-25;
-  border-radius: 50%;
-}
-.minus-button::after {
-  position: absolute;
-  left: 12px;
-  content: '';
-  width: 4px;
-  height: 1px;
-  background: $dark-50;
-}
-
-.plus-button { //@import button class
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $dark-25;
-  border-radius: 50%;
-  //opacity: 50%;
-}
-.plus-button::after, .plus-button::before {
-  content: '';
-  position: absolute;
-  background: $dark-50;
-}
-.plus-button::after {
-  left: 10px;
-  width: 8px;
-  height: 1px;
-}
-.plus-button::before {
-  left: 10px;
-  width: 8px;
-  height: 1px;
-  transform: rotate(90deg);
-}
-.plus-button__plug {
-  position: absolute;
-  left: 13.4px;
-  width: 2px;
-  height: 1px;
-  background: white;
+.dropdown-menu {
+  height: 119px;
+  padding-bottom: 7px;
 }

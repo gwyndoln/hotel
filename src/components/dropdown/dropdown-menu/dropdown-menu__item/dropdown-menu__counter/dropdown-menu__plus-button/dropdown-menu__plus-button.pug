@@ -1,0 +1,9 @@
+mixin plus-button(options)
+  if !options
+    - options = {}
+  -
+    var className= 'button dropdown-menu__plus-button'
+    className += options.transparent ? ' dropdown-menu__plus-button_transparent' : ''
+
+  button(type='button' class=className)
+    .dropdown-menu__plus-button-plug

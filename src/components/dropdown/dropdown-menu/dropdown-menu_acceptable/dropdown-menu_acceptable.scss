@@ -2,14 +2,16 @@
 
 .dropdown-menu_acceptable {
   .accept-box {
+    width: 299px;
     height: 15px;
     display: flex;
     justify-content: space-between;
-    padding: 20px 6px 19px 13px;
+    padding: 20px 0 19px 0;
   }
 }
 .clear-button, .accept-button {
   border: none;
+  padding: 0;
 }
 .clear-button__text, .accept-button__text {
   color: $purple-prime;

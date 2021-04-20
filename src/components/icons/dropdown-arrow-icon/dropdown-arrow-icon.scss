@@ -1,28 +1,28 @@
 .dropdown-icon {
-  width: 44px;
-  height: 29px;
+  width: 43px;
+  height: 42px;
   position: relative;
+  opacity: 50%;
 }
 .dropdown-arrow {
   position: absolute;
-  top: 13px;
-  left: 17px;
+  top: 20px;
+  left: 15px;
   width: 8px;
   height: 2px;
   transform: rotate(45deg);
-  background: $dark-50;
+  background: $dark-100;
 }
 .dropdown-arrow::after {
   content: '';
   position: absolute;
   width: 2px;
-  height: 6px;
+  height: 7px;
   left: 6px;
   top: -6px;
   transform: rotate(180deg);
-  background: $dark-50;
+  background: $dark-100;
 }
-.dropdown-arrow_dark, .dropdown-arrow_dark::after  {
-  background: $dark-75;
-
+.dropdown-icon_dark {
+  opacity: 75%;
 }

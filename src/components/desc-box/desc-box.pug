@@ -1,6 +1,9 @@
 mixin desc-box(desc)
+  if !options
+  - options = {}
+
   .desc-box
     .desc-box__title
       h3= desc.title
       p= desc.extra
-    block 
+    block

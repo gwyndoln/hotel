@@ -5,4 +5,8 @@
 .dropdown-button {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.dropdown-button__text {
+  padding: 0 0 1px 14px;
 }

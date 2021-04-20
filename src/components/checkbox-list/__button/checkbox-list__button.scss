@@ -1,6 +1,8 @@
 @import '../../icons/dropdown-arrow-icon/dropdown-arrow-icon';
+@import '../../buttons/button/button';
 
 .checkbox-list__button {
+  border: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

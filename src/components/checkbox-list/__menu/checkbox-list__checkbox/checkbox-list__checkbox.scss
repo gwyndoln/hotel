@@ -1,0 +1,26 @@
+.checkbox__label {
+  color: $dark-50;
+}
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox__label {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 10px;
+  user-select: none;
+}
+.checkbox__label::before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $dark-25;
+  border-radius: 4px;
+}
+.custom-checkbox:checked .checkbox__label::before {
+  background-color: #0b76ef;
+}

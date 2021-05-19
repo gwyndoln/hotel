@@ -1,26 +1,34 @@
-.checkbox__label {
-  color: $dark-50;
+.checkbox-buttons .desc-box__title {
+  margin-bottom: 16px;
 }
+
 .custom-checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 .checkbox__label {
-  display: inline-flex;
-  align-items: center;
-  padding-top: 10px;
+  color: $dark-50;
+  display: flex;
+  margin-top: 10px;
   user-select: none;
 }
+.checkbox__label p {
+  line-height: 18px;
+}
 .checkbox__label::before {
-  content: '';
   margin-right: 10px;
-  display: inline-block;
+  content: '';
+  flex-shrink: 0;
+  flex-grow: 0;
   width: 20px;
   height: 20px;
   border: 1px solid $dark-25;
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.custom-checkbox:checked .checkbox__label::before {
-  background-color: #0b76ef;
+.custom-checkbox:checked+label::before {
+  border-color: $purple-prime;
+  background-image: url(/components/checkbox-list/__menu/checkbox-list__checkbox/checkmark.svg);
 }

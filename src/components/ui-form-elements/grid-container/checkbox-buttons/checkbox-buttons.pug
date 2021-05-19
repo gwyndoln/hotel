@@ -2,4 +2,6 @@ include ../../../checkbox-list/__menu/checkbox-list__checkbox/checkbox-list__che
 
 .checkbox-buttons
   +desc-box({title: 'CHECKBOX BUTTONS'})
-    +checkbox('Можно курить')
+    +checkbox({text:'Можно курить', id:'smoke', checked: false})
+    +checkbox({text: 'Можно с питомцами', id: 'pets', checked: true})
+    +checkbox({text: 'Можно пригласить гостей (до 10 человек)', id: 'guests', checked: true})

@@ -1,4 +1,7 @@
 mixin checkbox(options)
+  if !options
+    - options = {}
+
   input.custom-checkbox(type='checkbox', id=options.id, value='', name='', checked=options.checked)
   label.checkbox__label(for=options.id)
     p= options.text

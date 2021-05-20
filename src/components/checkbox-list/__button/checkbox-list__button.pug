@@ -1,6 +1,6 @@
 include ../../icons/dropdown-arrow-icon/dropdown-arrow-icon
 
-mixin checkbox-list__button(text)
+mixin checkbox-list__button(options)
   button.button.checkbox-list__button(type='button')
-    h3= text 
-    +dropdown-arrow-icon
+    h3= options.text 
+    +dropdown-arrow-icon({expand: options.expand})

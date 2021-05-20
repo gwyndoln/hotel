@@ -1,1 +1,8 @@
 @import 'checkbox-list__checkbox/checkbox-list__checkbox';
+
+.checkbox-list__menu {
+  width: 222px;
+}
+.checkbox-list__menu label:nth-of-type(1) {
+  margin-top: 0;
+}

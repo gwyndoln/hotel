@@ -1,7 +1,13 @@
 mixin checkbox(options)
   if !options
     - options = {}
+  
+  -
+    var labelClassName = 'checkbox__label'
+    labelClassName += options.addtext ? ' checkbox__label_rich' : ''
 
-  input.custom-checkbox(type='checkbox', id=options.id, value='', name='', checked=options.checked)
-  label.checkbox__label(for=options.id)
-    p= options.text
+  input.checkbox(type='checkbox', id=options.id, value='', name='', checked=options.checked)
+  label(for=options.id, class=labelClassName)
+    .div
+      p.checkbox__text= options.text
+      p.checkbox__addtext= options.addtext

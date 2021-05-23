@@ -1,19 +1,18 @@
 .checkbox-buttons .desc-box__title {
   margin-bottom: 16px;
 }
-
-.custom-checkbox {
+.checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 .checkbox__label {
-  color: $dark-50;
   display: flex;
   margin-top: 10px;
   user-select: none;
 }
-.checkbox__label p {
+.checkbox__text {
+  color: $dark-50;
   line-height: 18px;
 }
 .checkbox__label::before {
@@ -28,7 +27,23 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-.custom-checkbox:checked+label::before {
+.checkbox:checked+label::before {
   border-color: $purple-prime;
   background-image: url(/components/checkbox-list/__menu/checkbox-list__checkbox/checkmark.svg);
+}
+.div {
+  display: flex;
+  flex-direction: column;
+}
+.checkbox__label_rich .checkbox__text {
+  font-family: $font-stack-bold;
+  font-size: 14px;
+  color: $dark-75;
+  margin-top: 1px;
+  margin-bottom: 6px;
+}
+.checkbox__label_rich .checkbox__addtext {
+  color: $dark-50;
+  line-height: 14px;
+  font-size: 12px;
 }

@@ -1,0 +1,12 @@
+@import '../../../radio-group/radio-group';
+
+.radio-buttons {
+  grid-column-start: 3;
+  grid-row-start: 5;
+  .radio-group {
+  width: 220px;
+  }
+  .desc-box__title {
+  margin-bottom: 13px;
+  }
+}

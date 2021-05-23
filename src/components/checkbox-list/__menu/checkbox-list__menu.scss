@@ -1,5 +1,6 @@
 @import 'checkbox-list__checkbox/checkbox-list__checkbox';
 
-.checkbox-list__menu label:nth-of-type(1) {
-  margin-top: 0;
+.checkbox-list__menu {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,9 @@
+@import '../../../toggle/toggle';
+
+.toggle-box {
+  .desc-box__title {
+    margin-bottom: 13px;
+  }
+  grid-column-start: 3;
+  grid-row-start: 7;
+}

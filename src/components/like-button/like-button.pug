@@ -1,0 +1,12 @@
+mixin like-button(options)
+
+  if !options
+    - options = {}
+
+  -
+    var likeButtonClassName = 'like-button'
+    likeButtonClassName += options.active ? ' like-button_active' : ''
+
+  div(class= likeButtonClassName)
+    .heart
+    p.count=options.count

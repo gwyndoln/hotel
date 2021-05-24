@@ -1,0 +1,29 @@
+.like-button {
+  width: 40px;
+  height: 20px;
+  border: 1px solid $dark-25;
+  border-radius: 10px 10px;
+  display: flex;
+  align-items: center;
+}
+.heart {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+  background-image: url(/svg/heart-inactive.svg);
+}
+.count {
+  color: $dark-25;
+  font-size: 10px;
+  line-height: 12px;
+}
+.like-button_active {
+  border-color: $purple-prime;
+}
+.like-button_active .heart {
+  background-image: url(/svg/heart-active.svg);
+}
+.like-button_active .count {
+  color: $purple-prime;
+}

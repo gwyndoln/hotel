@@ -7,6 +7,7 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+  color: $dark-50;
 }
 .radio-button__label::before {
   content: '';
@@ -20,6 +21,9 @@
   margin-right: 10px;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.radio-button__input:checked+.radio-button__label {
+  color: $dark-75;
 }
 .radio-button__input:checked+.radio-button__label::before {
   border-color: $purple-prime;

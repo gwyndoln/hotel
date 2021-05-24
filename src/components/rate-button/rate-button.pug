@@ -1,0 +1,10 @@
+mixin rate-button(options)
+
+  if !options
+    - options = {}
+
+  -
+    var rateButtonClassName = 'rate-button'
+    rateButtonClassName +=  0 < options.quantity < 5 ? ` rate-button_quantity_${options.quantity}` : ''
+
+  div(class= rateButtonClassName)

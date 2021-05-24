@@ -1,0 +1,14 @@
+@import '../../../rate-button/rate-button';
+
+.rate-buttons {
+  grid-column-start: 3;
+  grid-row-start: 11;
+  .desc-box__title {
+    margin-bottom: 15px;
+  }
+  .rate-buttons__wrapper {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+  }
+}

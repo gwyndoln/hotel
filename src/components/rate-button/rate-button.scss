@@ -1,0 +1,19 @@
+.rate-button {
+  width: 120px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: 2% 50%, 26% 50%, 50% 50%, 74% 50%, 98% 50%;
+  background-image: url(/svg/star.svg), url(/svg/star.svg), url(/svg/star.svg), url(/svg/star.svg), url(/svg/star.svg);
+}
+.rate-button_quantity_4 {
+  background-image: url(/svg/star.svg), url(/svg/star.svg), url(/svg/star.svg), url(/svg/star.svg), url(/svg/star-empty.svg);
+}
+.rate-button_quantity_3 {
+  background-image: url(/svg/star.svg), url(/svg/star.svg), url(/svg/star.svg), url(/svg/star-empty.svg), url(/svg/star-empty.svg);
+}
+.rate-button_quantity_2 {
+  background-image: url(/svg/star.svg), url(/svg/star.svg), url(/svg/star-empty.svg), url(/svg/star-empty.svg), url(/svg/star-empty.svg);
+}
+.rate-button_quantity_1 {
+  background-image: url(/svg/star.svg), url(/svg/star-empty.svg), url(/svg/star-empty.svg), url(/svg/star-empty.svg), url(/svg/star-empty.svg);
+}

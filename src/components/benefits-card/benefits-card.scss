@@ -1,0 +1,29 @@
+.benefits-card {
+  display: grid;
+  gap: 0px 10px;
+  grid-template-columns: 48px 222px;
+  grid-template-rows: 24px 24px;
+  grid-template-areas: 
+    'image title'
+    'image text';
+}
+.benefits-card__image-wrapper {
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits-card__title {
+  grid-area: title;
+  font-family: $font-stack-bold;
+}
+.benefits-card__text {
+  grid-area: text;
+}
+.benefits-card__plank {
+  width: 280px;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: $dark-10;
+}

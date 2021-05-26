@@ -1,0 +1,9 @@
+@import '../../../bullet-list/bullet-list';
+
+.bullet-lists {
+  .desc-box__title {
+    margin-bottom: 13px;
+  }
+  grid-row-start: 19;
+  grid-column-start: 5;
+}

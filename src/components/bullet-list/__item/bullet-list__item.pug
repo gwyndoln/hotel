@@ -1,0 +1,6 @@
+mixin bullet-list__item(options)
+
+  if !options
+    - options = {}
+
+  li.bullet-list__item= options.text

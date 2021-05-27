@@ -1,0 +1,9 @@
+mixin white-button(options)
+
+  if !options
+    - options= {}
+
+  .white-button-border
+    form(action=options.action, method=options.method, name=options.name)
+      button.white-button.button(type=options.type, name=options.name, value=options.value)
+        h3= options.text

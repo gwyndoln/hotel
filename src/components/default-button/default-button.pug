@@ -1,0 +1,8 @@
+mixin default-button(options)
+
+  if !options
+    - options= {}
+
+  form(action=options.action, method=options.method, name=options.name)
+    button.default-button.button(type=options.type, name=options.name, value=options.value)
+      h3= options.text

@@ -1,0 +1,7 @@
+mixin link(options)
+
+  if !options
+    - options = {}
+
+  h3.link-wrapper 
+    a.link(href=options.href)= options.text

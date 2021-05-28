@@ -1,0 +1,9 @@
+@import '../../../pagination/pagination';
+
+.pagination-block {
+  grid-row-start: 9;
+  grid-column-start: 5;
+  .desc-box {
+    margin-bottom: 16px;
+  }
+}

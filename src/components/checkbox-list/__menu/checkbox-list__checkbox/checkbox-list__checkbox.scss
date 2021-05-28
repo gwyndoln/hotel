@@ -29,7 +29,7 @@
 }
 .checkbox__input:checked+.checkbox__label::before {
   border-color: $purple-prime;
-  background-image: url(/svg/checkmark.svg);
+  background-image: url(images/svg/checkmark.svg);
 }
 .checkbox__text-wrapper {
   display: flex;

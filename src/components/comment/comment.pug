@@ -6,7 +6,7 @@ mixin comment(options)
     - options = {}
 
   .comment 
-    img.comment__image(src=require(`./images/${options.image}`), alt=options.image)
+    img.comment__image(src=require(`./images/jpg/${options.image}`), alt=options.image)
     +like-button({count: options.likeCount, active: options.likeActive})
     p.comment__name= options.name
     p.comment__date= options.date

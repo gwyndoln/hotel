@@ -23,10 +23,10 @@
   border-radius: 10px 10px;
   background-repeat: no-repeat;
   background-position: 10% 50%;
-  background-image: url(/svg/faded-radio.svg);
+  background-image: url(images/svg/faded-radio.svg);
 }
 .toggle__input:checked+.toggle__label::before {
   border-color: $purple-prime;
   background-position: 90% 50%;
-  background-image: url(/svg/radio.svg);
+  background-image: url(images/svg/radio.svg);
 }

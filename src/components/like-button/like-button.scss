@@ -11,7 +11,7 @@
   height: 20px;
   background-repeat: no-repeat;
   background-position: 40% 50%;
-  background-image: url(/svg/heart-inactive.svg);
+  background-image: url(images/svg/heart-inactive.svg);
 }
 .count {
   color: $dark-25;
@@ -22,7 +22,7 @@
   border-color: $purple-prime;
 }
 .like-button_active .heart {
-  background-image: url(/svg/heart-active.svg);
+  background-image: url(images/svg/heart-active.svg);
 }
 .like-button_active .count {
   color: $purple-prime;

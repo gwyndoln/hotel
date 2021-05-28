@@ -1,8 +1,11 @@
-@import '__logo/ui-form-elements__logo';
 @import 'grid-container/grid-container';
 
 .ui-form-elements {
   position: relative;
   height: 1853px;
+  .logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
 }
-

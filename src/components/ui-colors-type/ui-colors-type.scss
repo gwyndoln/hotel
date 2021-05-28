@@ -1,8 +1,12 @@
 @import 'color-container/color-container';
 @import 'font-container/font-container';
-@import '__logo/ui-colors-type__logo';
 
 .ui-colors-type {
   position: relative;
   height: 900px;
+  .logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
 }

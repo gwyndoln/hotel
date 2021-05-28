@@ -1,6 +1,7 @@
 include ../../../default-button/default-button
 include ../../../white-button/white-button
 include ../../../link/link
+include ../../../pay-button/pay-button
 
 
 .buttons
@@ -13,3 +14,4 @@ include ../../../link/link
   .links__container
     +link({href: '#', text: 'CLICK ME'})
     +link({href: '#', text: 'CLICK ME'})
+  +pay-button({text: 'ПЕРЕЙТИ К ОПЛАТЕ', type: 'button'})

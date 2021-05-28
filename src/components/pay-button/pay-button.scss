@@ -1,0 +1,17 @@
+.pay-button {
+  position: relative;
+  border: none;
+  width:  320px;
+  height: 44px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  .button-icon {
+    left: 276px;
+  }
+  .button-arrow, .button-arrow::after, .button-arrow::before {
+    background: white;
+  }
+}
+.pay-button h3 {
+  color: white;
+}

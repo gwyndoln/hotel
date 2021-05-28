@@ -1,6 +1,7 @@
 @import '../../../default-button/default-button';
 @import '../../../white-button/white-button';
 @import '../../../link/link';
+@import '../../../pay-button/pay-button';
 
 .buttons {
   grid-column-start: 5;
@@ -37,6 +38,7 @@
   display: flex;
   justify-content: space-between;
   width: 142px;
+  margin-bottom: 30px;
 }
 .links__container h3:nth-of-type(2) .link {
   color: $dark-50;

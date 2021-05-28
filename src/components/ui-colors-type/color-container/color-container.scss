@@ -1,12 +1,9 @@
-@import 'color-wrapper/color-wrapper';
+@import 'color/color';
 
 .color-container {
-  position: absolute;
-  margin-left: 150px;
-  padding-top: 145px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 280px;
-  height: 610px + 145px;
+  width: 281px;
+  height: 610px;
 }

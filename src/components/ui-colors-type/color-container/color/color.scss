@@ -1,0 +1,44 @@
+.color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.color__desc {
+  width: 171px;
+  height: 56px;
+}
+.color__name {
+  line-height: 28px;
+}
+.color__hex {
+  font-size: 19px;
+  line-height: 28px;
+  color: $dark-100;
+}
+.color__rect {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+.color__rect_dark-100 {
+  background: $dark-100;
+}
+.color__rect_dark-75 {
+  background: $dark-75;
+}
+.color__rect_dark-50 {
+  background: $dark-50;
+}
+.color__rect_dark-25 {
+  background: $dark-25;
+}
+.color__rect_dark-5 {
+  background: $dark-5;
+}
+.color__rect_purple-prime {
+  background: $purple-prime;
+}
+.color__rect_green-sec {
+  background: $green-sec;
+}

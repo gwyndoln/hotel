@@ -1,0 +1,6 @@
+mixin color(palette)
+  .color
+    div(class=`color__rect color__rect_${palette.color}`)
+    .color__desc
+      h2.color__name= palette.colorName
+      p.color__hex= palette.colorHex

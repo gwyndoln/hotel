@@ -2,8 +2,11 @@
 @import 'font-container/font-container';
 
 .ui-colors-type {
-  position: relative;
-  height: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin: 145px 0px 145px 150px;
+  height: 610px;
+  width: 1132px;
   .logo {
     position: absolute;
     left: 30px;

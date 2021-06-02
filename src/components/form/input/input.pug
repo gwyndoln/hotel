@@ -1,3 +1,7 @@
 mixin input(options)
-  label(for=options.for class='hidden-label')
-  input(type=options.type id=options.for name=options.name placeholder=options.placeholder class='input text-field')
+
+  if !options
+    - options = {}
+
+  label.input__label_hidden(for=options.for)
+  input.input.text-field(type=options.type id=options.for name=options.name placeholder=options.placeholder)

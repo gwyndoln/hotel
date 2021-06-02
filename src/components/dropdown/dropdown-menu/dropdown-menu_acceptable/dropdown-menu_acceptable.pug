@@ -1,6 +1,10 @@
-mixin accept(clear, accept)
+mixin accept(options)
+
+  if !options
+    - options= {}
+
   .accept-box
-    button.button.clear-button(type='button')
-      h3.clear-button__text= clear 
-    button.button.accept-button(type='button')
-      h3.accept-button__text= accept
+    h3.clear-button-text= options.clear 
+      button.button.clear-button(type='button')  
+    h3.accept-button-text= options.accept
+      button.button.accept-button(type='button')

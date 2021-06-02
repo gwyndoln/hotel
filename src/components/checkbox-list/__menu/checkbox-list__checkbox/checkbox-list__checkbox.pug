@@ -10,5 +10,5 @@ mixin checkbox(options)
     input.checkbox__input(type='checkbox', id=options.id, name=options.id, checked=options.checked)
     label.checkbox__label(for=options.id)
       .checkbox__text-wrapper
-        p.checkbox__text= options.text
-        p.checkbox__addtext= options.addtext
+        p.checkbox__text!= options.text
+        p.checkbox__addtext!= options.addtext

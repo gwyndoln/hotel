@@ -3,11 +3,19 @@
   height: 44px;
   border: 1px solid $dark-25;
   border-radius: 4px;
-  padding: 8px 0px 7px 14px;
+  padding: 5px 0px 7px 14px;
 }
 .text-field_mini {
   width: 150px;
+  .dropdown-arrow {
+    top: 21px;
+    left: 16px;
+  }
 }
 .text-field_middle {
   width: 266px;
+  .dropdown-arrow {
+    top: 21px;
+    left: 16px;
+  }
 }

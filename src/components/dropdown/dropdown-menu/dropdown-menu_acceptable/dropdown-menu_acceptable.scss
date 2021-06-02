@@ -6,13 +6,13 @@
     height: 15px;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0 19px 0;
+    margin: 21px 0 12px 0;
   }
 }
 .clear-button, .accept-button {
   border: none;
   padding: 0;
 }
-.clear-button__text, .accept-button__text {
+.clear-button-text, .accept-button-text {
   color: $purple-prime;
 }

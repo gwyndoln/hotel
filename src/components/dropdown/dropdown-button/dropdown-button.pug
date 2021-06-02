@@ -1,6 +1,10 @@
 include ../../icons/dropdown-arrow-icon/dropdown-arrow-icon
 
 mixin dropdown-button(options)
+
+  if !options
+    - options = {}
+
   -
     var buttonClassName = 'text-field button dropdown-button'
     var isDark = options.isDark
@@ -10,6 +14,6 @@ mixin dropdown-button(options)
     ? ' text-field_middle' 
     : ''
 
-  button(type='button' value='' class=buttonClassName)
+  button(type=options.type value=options.value class=buttonClassName)
     p.dropdown-button__text= options.text
     +dropdown-arrow-icon({dark: isDark})

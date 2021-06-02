@@ -1,13 +1,9 @@
 .desc-box {
-  .desc-box__title {
-    display: flex;
-    justify-content: space-between;
-    height: 15px;
-    margin-bottom: 5px;
-  }
-  .desc-box__title p {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  .desc-box__extra {
     color: $dark-50;
-    font-size: 12px;
-    line-height: 15px;
+    font-family: $font-stack-regular;
   }
 }

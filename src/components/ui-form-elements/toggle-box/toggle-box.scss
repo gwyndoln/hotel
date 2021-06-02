@@ -1,0 +1,10 @@
+@import '../../toggle/toggle';
+
+.toggle-box {
+  grid-column-start: 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  .desc-box {
+    margin: 7px 0px 13px 0px;
+  }
+}

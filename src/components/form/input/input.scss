@@ -1,13 +1,17 @@
 @import '../../text-field/text-field';
 
+.input__label_hidden {
+  visibility: hidden;
+}
 .input::placeholder {
   color: $dark-25;
 }
-.input:focus {
+.input:focus, input:hover {
   outline: none;
   border-color: $dark-50;
+  color: $dark-75;
 }
-
-.hidden-label {
-  visibility: hidden;
+.input:focus::placeholder, input:hover::placeholder {
+  color: $dark-75;
+  line-height: 24px;
 }

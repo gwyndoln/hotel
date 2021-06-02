@@ -6,11 +6,16 @@
   gap: 0px 12px;
   grid-template-columns: 48px 653px;
   grid-template-rows: 24px 24px 10px 72px;
-  grid-template-areas: 
+  grid-template-areas:
   'image name'
   'image date'
   '. .'
   'like text';
+  .like-button {
+    margin-left: 6px;
+    margin-top: 2px;
+    grid-area: like;
+  }
 }
 .comment__image {
   position: absolute;
@@ -18,11 +23,6 @@
   top: -10px;
   grid-area: image;
   z-index: -1;
-}
-.like-button {
-  margin-left: 6px;
-  margin-top: 2px;
-  grid-area: like;
 }
 .comment__name {
   grid-area: name;

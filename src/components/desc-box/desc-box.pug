@@ -3,7 +3,5 @@ mixin desc-box(desc)
     - desc = {}
 
   .desc-box
-    .desc-box__title
-      h3= desc.title
-      p= desc.extra
-    block
+    h3.desc-box__title= desc.title
+    h3.desc-box__extra= desc.extra

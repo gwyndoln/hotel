@@ -1,0 +1,10 @@
+@import '../../checkbox-list/__menu/checkbox-list__menu';
+
+.rich-checkbox-buttons {
+  grid-column-start: 3;
+  grid-row-start: 19;
+  grid-row-end: 22;
+  .desc-box {
+    margin: 14px 0 16px 0;
+  }
+}

@@ -5,7 +5,7 @@ include ../../dropdown/dropdown
   +dropdown
     +dropdown-button({text: '3 гостя', isDark: true})
     +dropdown-menu
-      +item('ВЗРОСЛЫЕ', 2)
-      +item('ДЕТИ', 1)
-      +item('МЛАДЕНЦЫ', 0, true)
-      +accept('ОЧИСТИТЬ', 'ПРИМЕНИТЬ')
+      +item({text: 'ВЗРОСЛЫЕ', count: '2'})
+      +item({text: 'ДЕТИ', count: '1'})
+      +item({text: 'МЛАДЕНЦЫ', count: '0', minusTransparent: true})
+      +accept({clear: 'ОЧИСТИТЬ', accept: 'ПРИМЕНИТЬ'})

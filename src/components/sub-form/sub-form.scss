@@ -1,12 +1,8 @@
 @import '../input/input';
-@import '../form';
-@import '../../buttons/button/button';
-@import '../../icons/button-arrow-icon/button-arrow-icon';
+@import '../icons/button-arrow-icon/button-arrow-icon';
 
 .sub-form {
-  .form {
-    position: relative;
-  }
+  position: relative;
   input {
     width: 266px;
     padding-right: 44px;

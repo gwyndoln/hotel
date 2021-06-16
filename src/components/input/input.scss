@@ -1,6 +1,6 @@
-@import '../../text-field/text-field';
+@import '../text-field/text-field';
 
-.input__label_hidden {
+.input__hidden-label {
   visibility: hidden;
 }
 .input::placeholder {

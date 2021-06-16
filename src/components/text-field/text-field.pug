@@ -1,3 +1,11 @@
-mixin text-field(text)
-  .text-field
-    p= text
+mixin text-field(options)
+
+  if !options
+    - options= {}
+
+  -
+    var fieldClassName= 'text-field'
+    fieldClassName += options.width ? ` text-field_width_${options.width}` : ''
+
+  div(class= fieldClassName)
+    p= options.text

@@ -12,3 +12,11 @@ body {
   width: 1440px;
   height: 5453px;
 }
+button {
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+button:focus {
+  outline: none;
+}

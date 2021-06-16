@@ -1,10 +1,9 @@
-@import 'dropdown-menu__item/dropdown-menu__item';
-@import '../../text-field/text-field';
-@import 'dropdown-menu_acceptable/dropdown-menu_acceptable';
+@import '__item_count/dropdown-menu__item_count';
+@import '_acceptable/dropdown-menu_acceptable';
 
 .dropdown-menu {
-  height: 100%;
+  border: 1px solid $dark-50;
   border-top: 0;
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 4px 4px;
   padding: 5px 6px 0px 14px;
 }

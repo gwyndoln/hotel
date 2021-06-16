@@ -1,0 +1,10 @@
+include ../dropdown/dropdown-button/dropdown-button
+
+.room-pick-card
+  h1= 'Найдём номера под ваши пожелания'
+  h3= 'ПРИБЫТИЕ'
+  h3= 'ВЫЕЗД'
+  +dropdown-button({text: 'ДД.ММ.ГГГГ', mini: true})
+  +dropdown-button({text: 'ДД.ММ.ГГГГ', mini: true})
+  h3= 'ГОСТИ'
+  +dropdown-button({text: 'Сколько гостей'})

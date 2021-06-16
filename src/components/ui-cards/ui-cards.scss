@@ -1,0 +1,14 @@
+@import '../room-pick-card/room-pick-card';
+
+.ui-cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: 380px 380px 320px;
+  gap: 40px;
+  padding: 150px 140px 140px 140px;
+  .logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+}

@@ -1,5 +1,4 @@
 @import '../../text-field/text-field';
-@import '../../buttons/button/button';
 @import '../../icons/dropdown-arrow-icon/dropdown-arrow-icon';
 
 .dropdown-button {
@@ -8,5 +7,5 @@
   align-items: center;
 }
 .dropdown-button__text {
-  padding: 0 0 3px 14px;
+  padding-bottom: 2px;
 }

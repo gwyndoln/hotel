@@ -1,4 +1,4 @@
-.pay-button {
+.big-button {
   position: relative;
   border: none;
   width:  320px;
@@ -11,7 +11,7 @@
   .button-arrow, .button-arrow::after, .button-arrow::before {
     background: white;
   }
-}
-.pay-button h3 {
-  color: white;
+  h3 {
+    color: white;
+  }
 }

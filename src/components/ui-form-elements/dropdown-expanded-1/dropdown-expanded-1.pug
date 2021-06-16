@@ -1,0 +1,10 @@
+include ../../dropdown/dropdown
+
+.dropdown-expanded
+  +desc-box({title:'DROPDOWN', extra: 'EXPANDED'})
+  +dropdown
+    +dropdown-button({text: '2 спальни, 2 кровати...', width: 'middle', isDark: true})
+    +dropdown-menu({width: 'middle'})
+      +item({text: 'СПАЛЬНИ', count: '2'})
+      +item({text: 'КРОВАТИ', count: '2'})
+      +item({text: 'ВАННЫЕ КОМНАТЫ', count: '0', minusTransparent: true})

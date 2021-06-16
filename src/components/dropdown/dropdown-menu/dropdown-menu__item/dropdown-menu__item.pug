@@ -1,8 +1,0 @@
-include dropdown-menu__counter/dropdown-menu__counter
-
-mixin item(text, count, minusTransparent, plusTransparent)
-  li.dropdown-menu__item
-    h3.dropdown-menu__text= text
-    +counter(count)
-      +minus-button({transparent: minusTransparent})
-      +plus-button({transparent: plusTransparent})

@@ -1,10 +1,12 @@
 mixin dropdown-arrow-icon(options)
+
   if !options
     - options = {}
+
   -
     var iconClassName= 'dropdown-icon'
     iconClassName += options.dark ? ' dropdown-icon_dark' :
     options.expand ? ' dropdown-icon_expand' : ''
-    
+
   div(class=iconClassName)
     .dropdown-arrow

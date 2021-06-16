@@ -3,5 +3,5 @@ mixin input(options)
   if !options
     - options = {}
 
-  label.input__label_hidden(for=options.for)
+  label.input__hidden-label(for=options.for)
   input.input.text-field(type=options.type id=options.for name=options.name placeholder=options.placeholder)

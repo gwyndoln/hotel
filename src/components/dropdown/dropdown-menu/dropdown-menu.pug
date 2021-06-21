@@ -1,9 +1,19 @@
 include __item_count/dropdown-menu__item_count
-include _acceptable/dropdown-menu_acceptable
 
 mixin dropdown-menu(options)
+
   if !options
     - options = {}
 
-  ul.dropdown-menu
+  -
+    var menuClass = 'dropdown-menu'
+    menuClass += options.applicable ? ' dropdown-menu_applicable' : ''
+    menuClass += options.clear ? ' dropdown-menu_applicable-clear' : ''
+
+  ul(class = menuClass)
     block
+    .dropdown-menu__apply-box
+      button.clear-button(type='button')
+        h3.clear-button-text= 'ОЧИСТИТЬ'
+      button.apply-button(type='button')
+        h3.apply-button-text= 'ПРИМЕНИТЬ'

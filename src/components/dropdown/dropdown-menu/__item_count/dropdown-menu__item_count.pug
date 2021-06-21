@@ -4,15 +4,15 @@ mixin item(options)
     - options = {}
 
   -
-    var minusButtonClassName= 'dropdown-menu__minus-button'
-    className += options.minusTransparent ? ' dropdown-menu__minus-button_transparent' : ''
+    var minusButtonClassName = 'dropdown-menu__minus-button'
+    minusButtonClassName += options.minusTransparent ? ' dropdown-menu__minus-button_transparent' : ''
 
-    var plusButtonClassName= 'dropdown-menu__plus-button'
-    buttonClassName += options.plusTransparent ? ' dropdown-menu__plus-button_transparent' : ''
+    var plusButtonClassName = 'dropdown-menu__plus-button'
+    plusButtonClassName += options.plusTransparent ? ' dropdown-menu__plus-button_transparent' : ''
 
   li.dropdown-menu__item
     h3.dropdown-menu__text= options.text
     .dropdown-menu__counter
       h3.dropdown-menu__counter-count= options.count
-      button(type='button' class= minusButtonClassName)
-      button(type='button' class= plusButtonClassName)
+      button(type='button' class = minusButtonClassName)
+      button(type='button' class = plusButtonClassName)

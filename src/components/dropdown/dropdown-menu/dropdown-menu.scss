@@ -1,9 +1,33 @@
 @import '__item_count/dropdown-menu__item_count';
-@import '_acceptable/dropdown-menu_acceptable';
 
 .dropdown-menu {
   border: 1px solid $dark-50;
   border-top: 0;
   border-radius: 0 0 4px 4px;
   padding: 5px 6px 0px 14px;
+}
+.dropdown-menu__apply-box {
+  display: none;
+}
+.dropdown-menu_applicable {
+  .dropdown-menu__apply-box {
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 21px 0 12px 0;
+  }
+  .clear-button, .apply-button {
+    border: none;
+  }
+  .clear-button {
+    visibility: hidden;
+  }
+  .clear-button-text, .apply-button-text {
+    color: $purple-prime;
+  }
+}
+.dropdown-menu_applicable-clear {
+  .clear-button {
+    visibility: visible;
+  }
 }

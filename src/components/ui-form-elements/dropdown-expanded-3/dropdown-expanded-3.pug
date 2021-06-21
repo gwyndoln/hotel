@@ -4,8 +4,7 @@ include ../../dropdown/dropdown
   +desc-box({title:'DROPDOWN'})
   +dropdown
     +dropdown-button({text: '3 гостя', isDark: true})
-    +dropdown-menu
+    +dropdown-menu({applicable: true, clear: true})
       +item({text: 'ВЗРОСЛЫЕ', count: '2'})
       +item({text: 'ДЕТИ', count: '1'})
       +item({text: 'МЛАДЕНЦЫ', count: '0', minusTransparent: true})
-      +accept({clear: 'ОЧИСТИТЬ', accept: 'ПРИМЕНИТЬ'})

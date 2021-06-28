@@ -1,0 +1,11 @@
+mixin title-box(options)
+  if !options
+    - options = {}
+
+  -
+    var titleClassName = 'title-box'
+    titleClassName += options.class ? ` ${options.class}` : ''
+
+  div(class = titleClassName)
+    h3.title-box__title= options.title
+    h3.title-box__additional-title= options.add

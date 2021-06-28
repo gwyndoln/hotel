@@ -1,0 +1,9 @@
+.title-box {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.title-box__additional-title {
+  color: $dark-50;
+  font-family: $font-stack-regular;
+}

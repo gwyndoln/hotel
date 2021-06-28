@@ -1,17 +1,18 @@
 .big-button {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   border: none;
   width:  320px;
   height: 44px;
   border-radius: 30px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  .button-icon {
-    left: 276px;
-  }
   .button-arrow, .button-arrow::after, .button-arrow::before {
     background: white;
   }
-  h3 {
-    color: white;
-  }
+}
+.big-button__text {
+  color: white;
+  padding-left: 91px;
 }

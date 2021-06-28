@@ -1,10 +1,11 @@
 include ../dropdown/dropdown-button/dropdown-button
 
-.room-pick-card
-  h1= 'Найдём номера под ваши пожелания'
-  h3= 'ПРИБЫТИЕ'
-  h3= 'ВЫЕЗД'
-  +dropdown-button({text: 'ДД.ММ.ГГГГ', mini: true})
-  +dropdown-button({text: 'ДД.ММ.ГГГГ', mini: true})
-  h3= 'ГОСТИ'
-  +dropdown-button({text: 'Сколько гостей'})
+form.room-pick-card
+  h1.room-pick-card__title= 'Найдём номера под ваши пожелания'
+  +title-box({class: 'room-pick-card__date-in-title', title: 'ПРИБЫТИЕ'})
+  +dropdown-button({class: 'room-pick-card__date-in', text: 'ДД.ММ.ГГГГ', width: 'mini'})
+  +title-box({class: 'room-pick-card__date-out-title', title: 'ВЫЕЗД'})
+  +dropdown-button({class: 'room-pick-card__date-out', text: 'ДД.ММ.ГГГГ', width: 'mini'})
+  +title-box({class: 'room-pick-card__guests-button-title', title: 'ГОСТИ'})
+  +dropdown-button({class: 'room-pick-card__guests-button', text: 'Сколько гостей'})
+  +big-button({class: 'room-pick-card__pick-button', type: 'button', text: 'ПОДОБРАТЬ НОМЕР'})

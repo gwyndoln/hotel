@@ -1,5 +1,49 @@
 @import '../dropdown/dropdown-button/dropdown-button';
 
 .room-pick-card {
+  background: white;
+  width: 380px;
+  height: 374px;
   padding: 40px 30px 30px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: grid;
+  grid-template:
+    [row1-start] 'header header header' 58px [row1-end]
+    [row2-start] 'row2-gap row2-gap row2-gap' 22px [row2-end]
+    [row3-start] 'date-in-title row3-gap date-out-title' 15px [row3-end]
+    [row4-start] 'row4-gap row4-gap row4-gap' 5px [row4-end]
+    [row5-start] 'date-in row5-gap date-out' 44px [row5-end]
+    [row6-start] 'row6-gap row6-gap row6-gap' 21px [row6-end]
+    [row7-start] 'guests-title guests-title guests-title' 15px [row7-end]
+    [row8-start] 'row8-gap row8-gap row8-gap' 5px [row8-end]
+    [row9-start] 'guests-btn guests-btn guests-btn' 44px [row9-end]
+    [row10-start] 'row10-gap row10-gap row10-gap' 31px [row10-end]
+    [row11-start] 'pick-btn pick-btn pick-btn' 44px [row11-end]
+    / 150px 20px 150px;
+}
+.room-pick-card__title {
+  grid-area: header;
+}
+.room-pick-card__date-in-title {
+  grid-area: date-in-title;
+}
+.room-pick-card__date-out-title {
+  grid-area: date-out-title;
+}
+.room-pick-card__date-in {
+  grid-area: date-in;
+}
+.room-pick-card__date-out {
+  grid-area: date-out;
+}
+.room-pick-card__guests-button-title {
+  grid-area: guests-title;
+}
+.room-pick-card__guests-button {
+  grid-area: guests-btn;
+}
+.room-pick-card__pick-button {
+  grid-area: pick-btn;
 }

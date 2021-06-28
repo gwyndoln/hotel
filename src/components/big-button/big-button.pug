@@ -3,7 +3,10 @@ mixin big-button(options)
   if !options
     - options = {}
 
-  form(action=options.action, method=options.method, name=options.name)
-    button.big-button(type=options.type, name=options.name, value=options.value)
-      h3= options.text
-      +button-arrow-icon
+  -
+    var buttonClassName = 'big-button'
+    buttonClassName += options.class ? ` ${options.class}` : ''
+
+  button(class = buttonClassName, type = options.type, name = options.name, value = options.value)
+    h3.big-button__text= options.text
+    +button-arrow-icon

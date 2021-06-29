@@ -1,11 +1,14 @@
-.white-button-border {
+.white-button__border {
   position: relative;
   width: 99px;
   height: 44px;
   background: linear-gradient(180deg, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
   border-radius: 30px;
 }
-.white-button {
+.white-button__border:hover {
+  background: linear-gradient(180deg, rgba(188, 156, 255, .5) 0%, rgba(139, 164, 249, .5) 100%);
+}
+.white-button__button {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -15,9 +18,6 @@
   border: none;
   border-radius: 30px;
 }
-.white-button h3 {
+.white-button__text {
   color: $purple-prime;
-}
-.white-button-border:hover {
-  background: linear-gradient(180deg, rgba(188, 156, 255, .5) 0%, rgba(139, 164, 249, .5) 100%);
 }

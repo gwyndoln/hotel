@@ -5,12 +5,12 @@ include ../../big-button/big-button
 
 .buttons
   +title-box({title: 'BUTTONS'})
-  .buttons__container
-    +default-button({text: 'CLICK ME', type: 'button'})
-    +white-button({text: 'CLICK ME', type: 'button'})
-    +default-button({text: 'CLICK ME', type: 'button'})
-    +white-button({text: 'CLICK ME', type: 'button'})
-  .links__container
-    +link({href: '#', text: 'CLICK ME'})
-    +link({href: '#', text: 'CLICK ME'})
+  .buttons-container
+    +default-button({class: 'buttons-default-button', text: 'CLICK ME', type: 'button'})
+    +default-button({class: 'buttons-default-button_hover', text: 'CLICK ME', type: 'button'})
+    +white-button({class: 'buttons-white-button', text: 'CLICK ME', type: 'button'})
+    +white-button({class: 'buttons-white-button_hover', text: 'CLICK ME', type: 'button'})
+  .links-container
+    +link({class: 'links-link', href: '#', text: 'CLICK ME'})
+    +link({class: 'links-link_hover', href: '#', text: 'CLICK ME'})
   +big-button({text: 'ПЕРЕЙТИ К ОПЛАТЕ', type: 'button'})

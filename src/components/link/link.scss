@@ -1,8 +1,10 @@
 .link {
   outline: none;
   text-decoration: none;
+}
+.link__text {
   color: $purple-prime;
 }
-.link:hover {
+.link__text:hover {
   color: $dark-50;
 }

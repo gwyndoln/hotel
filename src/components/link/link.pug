@@ -3,5 +3,9 @@ mixin link(options)
   if !options
     - options = {}
 
-  h3.link-wrapper 
-    a.link(href=options.href)= options.text
+  -
+    var linkClassName= 'link'
+    linkClassName += options.class ? ` ${options.class}` : ''
+
+  a(class = linkClassName, href = options.href)
+    h3.link__text= options.text

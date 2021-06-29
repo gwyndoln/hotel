@@ -3,5 +3,10 @@ mixin input(options)
   if !options
     - options = {}
 
-  label.input__hidden-label(for=options.for)
-  input.input.text-field(type=options.type id=options.for name=options.name placeholder=options.placeholder)
+  -
+    var inputClassName = 'text-field input'
+    inputClassName += options.class ? ` ${options.class}` : ''
+
+  label.input__label_hidden(for = options.id)
+  input(class = inputClassName, type = options.type, id = options.id, name = options.name,
+  placeholder = options.placeholder)

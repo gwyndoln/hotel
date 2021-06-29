@@ -11,15 +11,15 @@
   display: grid;
   grid-template:
     [row1-start] 'header header header' 58px [row1-end]
-    [row2-start] 'row2-gap row2-gap row2-gap' 22px [row2-end]
-    [row3-start] 'date-in-title row3-gap date-out-title' 15px [row3-end]
-    [row4-start] 'row4-gap row4-gap row4-gap' 5px [row4-end]
-    [row5-start] 'date-in row5-gap date-out' 44px [row5-end]
-    [row6-start] 'row6-gap row6-gap row6-gap' 21px [row6-end]
+    [row2-start] '. . .' 22px [row2-end]
+    [row3-start] 'date-in-title . date-out-title' 15px [row3-end]
+    [row4-start] '. . .' 5px [row4-end]
+    [row5-start] 'date-in . date-out' 44px [row5-end]
+    [row6-start] '. . .' 21px [row6-end]
     [row7-start] 'guests-title guests-title guests-title' 15px [row7-end]
-    [row8-start] 'row8-gap row8-gap row8-gap' 5px [row8-end]
+    [row8-start] '. . .' 5px [row8-end]
     [row9-start] 'guests-btn guests-btn guests-btn' 44px [row9-end]
-    [row10-start] 'row10-gap row10-gap row10-gap' 31px [row10-end]
+    [row10-start] '. . .' 31px [row10-end]
     [row11-start] 'pick-btn pick-btn pick-btn' 44px [row11-end]
     / 150px 20px 150px;
 }

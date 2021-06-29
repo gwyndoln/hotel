@@ -1,0 +1,98 @@
+@import '../input/input';
+@import '../radio-button/radio-button';
+@import '../toggle/toggle';
+@import '../big-button/big-button';
+@import '../default-button/default-button';
+
+.reg-card {
+  display: grid;
+  grid-template:
+    [reg-form] 'reg-form' 502px [reg-form]
+    [gap] '.' 28px [gap]
+    [log-form] 'log-form' 44px [log-form];
+  grid-column-start: 1;
+  background: white;
+  width: 380px;
+  height: 646px;
+  padding: 40px 30px 30px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+.reg-card__reg-form {
+  grid-area: reg-form;
+  display: grid;
+  grid-template:
+    [header] 'header' 30px [header]
+    [gap] '.' 20px [gap]
+    [first-name] 'first-name' 44px [first-name]
+    [gap] '.' 10px [gap]
+    [last-name] 'last-name' 44px [last-name]
+    [gap] '.' 8px [gap]
+    [radio-group] 'radio-group' 27px [radio-group]
+    [gap] '.' 19px [gap]
+    [date-title] 'date-title' 15px [date-title]
+    [gap] '.' 5px [gap]
+    [date-input] 'date-input' 44px [date-input]
+    [gap] '.' 20px [gap]
+    [data-title] 'data-title' 15px [data-title]
+    [gap] '.' 5px [gap]
+    [mail-input] 'mail-input' 44px [mail-input]
+    [gap] '.' 10px [gap]
+    [pass-input] 'pass-input' 44px [pass-input]
+    [gap] '.' 14px [gap]
+    [toggle-offer] 'toggle-offer' 20px [toggle-offer]
+    [gap] '.' 19px [gap]
+    [pay-btn] 'pay-btn' 44px [pay-btn]
+}
+.reg-card__reg-title {
+  grid-area: header;
+}
+.reg-card-first-name {
+  grid-area: first-name;
+}
+.reg-card-last-name {
+  grid-area: last-name;
+}
+.reg-card__radio-group {
+  grid-area: radio-group;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+.reg-card-date-title {
+  grid-area: date-title;
+}
+.reg-card-date-input {
+  grid-area: date-input;
+}
+.reg-card-data-title {
+  grid-area: data-title;
+}
+.reg-card-mail-input {
+  grid-area: mail-input;
+}
+.reg-card-pass-input {
+  grid-area: pass-input;
+}
+.reg-card-toggle-offer {
+  grid-area: toggle-offer;
+}
+.reg-card-pay-btn {
+  grid-area: pay-btn;
+}
+.reg-card__log-form {
+  grid-area: log-form;
+  display: grid;
+  align-items: center;
+  grid-template:
+    [start] 'log-text . log-btn' 44px [end] / 186px 35px 99px;
+}
+.reg-card__log-text {
+  grid-area: log-text;
+  line-height: 18px;
+  color: black;
+}
+.reg-card-log-btn {
+  grid-area: log-btn;
+}

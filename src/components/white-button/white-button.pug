@@ -3,7 +3,11 @@ mixin white-button(options)
   if !options
     - options= {}
 
-  .white-button-border
-    form(action=options.action, method=options.method, name=options.name)
-      button.white-button(type=options.type, name=options.name, value=options.value)
-        h3= options.text
+  -
+    var buttonClassName = 'white-button' 
+    buttonClassName += options.class ? ` ${options.class}` : ''
+
+  div(class = buttonClassName)
+    div(class = 'white-button__border')
+      button(class = 'white-button__button', type = options.type, name = options.name, value = options.value)
+        h3.white-button__text= options.text

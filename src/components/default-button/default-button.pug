@@ -1,8 +1,11 @@
 mixin default-button(options)
 
   if !options
-    - options= {}
+    - options = {}
 
-  form(action=options.action, method=options.method, name=options.name)
-    button.default-button(type=options.type, name=options.name, value=options.value)
-      h3= options.text
+  -
+    var buttonClassName = 'default-button'
+    buttonClassName += options.class ? ` ${options.class}` : ''
+
+  button(class = buttonClassName, type = options.type, name = options.name, value = options.value)
+    h3.default-button__text= options.text

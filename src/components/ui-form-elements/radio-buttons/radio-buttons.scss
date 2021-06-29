@@ -1,4 +1,4 @@
-@import '../../radio-group/radio-group';
+@import '../../radio-button/radio-button';
 
 .radio-buttons {
   grid-column-start: 3;
@@ -6,4 +6,9 @@
   .title-box {
     margin-bottom: 14px;
   }
+}
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
 }

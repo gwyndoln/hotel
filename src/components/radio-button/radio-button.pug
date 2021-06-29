@@ -1,0 +1,9 @@
+mixin radio-button(options)
+
+  if !options
+    - options = {}
+
+  .radio-button
+    input.radio-button__input(type = 'radio', id = options.id, name = options.name,
+    value = options.id, checked = options.checked)
+    label.radio-button__label(for = options.id)= options.text

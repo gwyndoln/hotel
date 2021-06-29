@@ -11,36 +11,36 @@
     margin: 3px 0 16px 0;
   }
 }
-.buttons__container {
+.buttons-container {
   display: grid;
   grid-template:
-    [start] 'default-button . default-button_hover' 44px [row2]
-    [row2] '. . .' 30px [row3]
-    [row3] 'white-button . white-button_hover' 44px [row-end] / 99px 20px 99px;
+    [row1-start] 'default-button . default-button_hover' 44px [row1-end]
+    [row2-start] '. . .' 30px [row2-end]
+    [row3-start] 'white-button . white-button_hover' 44px [row3-end] / 99px 20px 99px;
   margin-bottom: 31px;
 }
-.buttons__container form:nth-of-type(1) {
+.buttons-default-button {
   grid-area: default-button;
 }
-.buttons__container form:nth-of-type(2) {
+.buttons-container .buttons-default-button_hover {
   grid-area: default-button_hover;
-}
-.buttons__container form:nth-of-type(2) .default-button {
   background: linear-gradient(180deg, rgba(188, 156, 255, .5) 0%, rgba(139, 164, 249, .5) 100%);
 }
-.buttons__container div:nth-of-type(1) {
+.buttons-white-button {
   grid-area: white-button;
 }
-.buttons__container div:nth-of-type(2) {
+.buttons-white-button_hover {
   grid-area: white-button_hover;
+}
+.buttons-white-button_hover .white-button__border {
   background: linear-gradient(180deg, rgba(188, 156, 255, .5) 0%, rgba(139, 164, 249, .5) 100%);
 }
-.links__container {
+.links-container {
   display: flex;
   justify-content: space-between;
   width: 142px;
   margin-bottom: 30px;
 }
-.links__container h3:nth-of-type(2) .link {
+.links-link_hover .link__text  {
   color: $dark-50;
 }

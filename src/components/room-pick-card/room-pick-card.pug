@@ -2,10 +2,10 @@ include ../dropdown/dropdown-button/dropdown-button
 
 form.room-pick-card
   h1.room-pick-card__title= 'Найдём номера под ваши пожелания'
-  +title-box({class: 'room-pick-card__date-in-title', title: 'ПРИБЫТИЕ'})
-  +dropdown-button({class: 'room-pick-card__date-in', text: 'ДД.ММ.ГГГГ', width: 'mini'})
-  +title-box({class: 'room-pick-card__date-out-title', title: 'ВЫЕЗД'})
-  +dropdown-button({class: 'room-pick-card__date-out', text: 'ДД.ММ.ГГГГ', width: 'mini'})
-  +title-box({class: 'room-pick-card__guests-button-title', title: 'ГОСТИ'})
-  +dropdown-button({class: 'room-pick-card__guests-button', text: 'Сколько гостей'})
-  +big-button({class: 'room-pick-card__pick-button', type: 'button', text: 'ПОДОБРАТЬ НОМЕР'})
+  +title-box({class: 'room-pick-card-date-in-title', title: 'ПРИБЫТИЕ'})
+  +dropdown-button({class: 'room-pick-card-date-in-btn', text: 'ДД.ММ.ГГГГ', width: 'mini'})
+  +title-box({class: 'room-pick-card-date-out-title', title: 'ВЫЕЗД'})
+  +dropdown-button({class: 'room-pick-card-date-out-btn', text: 'ДД.ММ.ГГГГ', width: 'mini'})
+  +title-box({class: 'room-pick-card-guests-title', title: 'ГОСТИ'})
+  +dropdown-button({class: 'room-pick-card-guests-btn', text: 'Сколько гостей'})
+  +big-button({class: 'room-pick-card-pick-btn', type: 'button', text: 'ПОДОБРАТЬ НОМЕР'})

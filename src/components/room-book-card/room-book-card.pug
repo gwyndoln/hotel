@@ -1,0 +1,33 @@
+include ../title-box/title-box
+include ../dropdown/dropdown-button/dropdown-button
+include ../icons/info-icon/info-icon
+include ../big-button/big-button
+
+.room-book-card
+  .room-book-card__title
+    h1.room-book-card__title-sign= '№'
+    h1.room-book-card__title-digit= '888'
+    h3.room-book-card__title-quality= 'ЛЮКС'
+  .room-book-card__daily-price
+    h3.room-book-card__daily-price-num= '9 990₽'
+    p.room-book-card__daily-price-day= 'в сутки'
+  +title-box({class: 'room-book-card-title-in', title: 'ПРИБЫТИЕ'})
+  +dropdown-button({class: 'room-book-card-btn-in', text: '19.08.2019', width: 'mini'})
+  +title-box({class: 'room-book-card-title-out', title: 'ВЫЕЗД'})
+  +dropdown-button({class: 'room-book-card-btn-out', text: '23.08.2019', width: 'mini'})
+  +title-box({class: 'room-book-card-guests-title', title: 'ГОСТИ'})
+  +dropdown-button({class: 'room-book-card-guests-btn', text: '3 гостя'})
+  .room-book-card__price
+    p.room-book-card__price-calc= '9 990₽ х 4 суток'
+    p.room-book-card__price-sum= '39 960₽'
+    p.room-book-card__service-charge-calc= 'Сбор за услуги: скидка 2 179₽'
+    +info-icon({class: 'room-book-card__service-charge-info'})
+    p.room-book-card__service-charge-sum= '0₽'
+    p.room-book-card__add-service-charge-calc= 'Сбор за дополнительные услуги'
+    +info-icon({class: 'room-book-card__add-service-charge-info'})
+    p.room-book-card__add-service-charge-sum= '300₽'
+  .room-book-card__total-price
+    h2.room-book-card__total= 'Итого'
+    .room-book-card__dashed-line
+    h2.room-book-card__total-num= '38 081₽'
+  +big-button({class: 'room-book-card-book-btn', text: 'ЗАБРОНИРОВАТЬ'})

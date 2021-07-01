@@ -1,0 +1,10 @@
+mixin info-icon(options)
+
+  if !options
+    - options = {}
+
+  -
+    var iconClassName= 'info-icon'
+    iconClassName += options.class ? ` ${options.class}` : ''
+
+  div(class = iconClassName)

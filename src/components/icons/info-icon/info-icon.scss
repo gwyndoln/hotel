@@ -1,0 +1,23 @@
+.info-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $dark-25;
+  border-radius: 50%;
+}
+.info-icon::before, .info-icon::after {
+  content: '';
+  position: absolute;
+  background: $dark-25;
+  width: 2px;
+  left: 8px;
+}
+.info-icon::after {
+  height: 7px;
+  top: 6px;
+}
+.info-icon::before {
+  height: 2px;
+  top: 3px;
+  border-radius: 50%;
+}

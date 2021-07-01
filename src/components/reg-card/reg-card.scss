@@ -5,12 +5,7 @@
 @import '../default-button/default-button';
 
 .reg-card {
-  display: grid;
-  grid-template:
-    [reg-form] 'reg-form' 502px [reg-form]
-    [gap] '.' 28px [gap]
-    [log-form] 'log-form' 44px [log-form];
-  grid-column-start: 1;
+  grid-area: reg;
   background: white;
   width: 380px;
   height: 646px;
@@ -18,6 +13,11 @@
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template:
+    [reg-form] 'reg-form' 502px [reg-form]
+    [gap] '.' 28px [gap]
+    [log-form] 'log-form' 44px [log-form];
 }
 .reg-card__reg-form {
   grid-area: reg-form;

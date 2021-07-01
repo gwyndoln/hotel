@@ -1,6 +1,7 @@
 @import '../dropdown/dropdown-button/dropdown-button';
 
 .room-pick-card {
+  grid-area: room-pick;
   background: white;
   width: 380px;
   height: 374px;
@@ -10,40 +11,40 @@
   border-radius: 4px;
   display: grid;
   grid-template:
-    [row1-start] 'header header header' 58px [row1-end]
-    [row2-start] '. . .' 22px [row2-end]
-    [row3-start] 'date-in-title . date-out-title' 15px [row3-end]
-    [row4-start] '. . .' 5px [row4-end]
-    [row5-start] 'date-in . date-out' 44px [row5-end]
-    [row6-start] '. . .' 21px [row6-end]
-    [row7-start] 'guests-title guests-title guests-title' 15px [row7-end]
-    [row8-start] '. . .' 5px [row8-end]
-    [row9-start] 'guests-btn guests-btn guests-btn' 44px [row9-end]
-    [row10-start] '. . .' 31px [row10-end]
-    [row11-start] 'pick-btn pick-btn pick-btn' 44px [row11-end]
+    [header] 'header header header' 58px [header]
+    [gap] '. . .' 22px [gap]
+    [date-in-title] 'date-in-title . date-out-title' 15px [date-in-title]
+    [gap] '. . .' 5px [gap]
+    [date-btns] 'date-in-btn . date-out-btn' 44px [date-btns]
+    [gap] '. . .' 21px [gap]
+    [guests-title] 'guests-title guests-title guests-title' 15px [guests-title]
+    [gap] '. . .' 5px [gap]
+    [guests-btn ] 'guests-btn guests-btn guests-btn' 44px [guests-btn]
+    [gap] '. . .' 31px [gap]
+    [pick-btn] 'pick-btn pick-btn pick-btn' 44px [pick-btn]
     / 150px 20px 150px;
 }
 .room-pick-card__title {
   grid-area: header;
 }
-.room-pick-card__date-in-title {
+.room-pick-card-date-in-title {
   grid-area: date-in-title;
 }
-.room-pick-card__date-out-title {
+.room-pick-card-date-out-title {
   grid-area: date-out-title;
 }
-.room-pick-card__date-in {
-  grid-area: date-in;
+.room-pick-card-date-in-btn {
+  grid-area: date-in-btn;
 }
-.room-pick-card__date-out {
-  grid-area: date-out;
+.room-pick-card-date-out-btn {
+  grid-area: date-out-btn;
 }
-.room-pick-card__guests-button-title {
+.room-pick-card-guests-title {
   grid-area: guests-title;
 }
-.room-pick-card__guests-button {
+.room-pick-card-guests-btn {
   grid-area: guests-btn;
 }
-.room-pick-card__pick-button {
+.room-pick-card-pick-btn {
   grid-area: pick-btn;
 }

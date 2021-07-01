@@ -1,0 +1,138 @@
+@import '../title-box/title-box';
+@import '../dropdown/dropdown-button/dropdown-button';
+@import '../icons/info-icon/info-icon';
+@import '../big-button/big-button';
+
+.room-book-card {
+  grid-area: room-book;
+  background: white;
+  width: 380px;
+  height: 512px;
+  padding: 40px 30px 30px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template:
+    [header] 'title . daily-price' 30px [header]
+    [gap] '. . .' 20px [gap]
+    [titles] 'title-in . title-out' 15px [titles]
+    [gap] '. . .' 5px [gap]
+    [btns] 'btn-in . btn-out' 44px [btns]
+    [gap] '. . .' 21px [gap]
+    [guests-title] 'guests-title guests-title guests-title' 15px [guests-title]
+    [gap] '. . .' 5px [gap]
+    [guests-btn] 'guests-btn guests-btn guests-btn' 44px [guests-btn]
+    [gap] '. . .' 18px [gap]
+    [price] 'price price price' 96px [price]
+    [gap] '. . .' 39px [gap]
+    [total-price] 'total-price total-price total-price' 24px [total-price]
+    [gap] '. . .' 21px [gap]
+    [book-btn] 'book-btn book-btn book-btn' 44px [book-btn]
+    / 150px 20px 150px;
+}
+.room-book-card__title {
+  grid-area: title;
+}
+.room-book-card__title-sign, .room-book-card__title-digit, .room-book-card__title-quality {
+  display: inline;
+}
+.room-book-card__title-sign {
+  font-size: 14px;
+  line-height: 17px;
+}
+.room-book-card__title-quality {
+  padding-left: 5px;
+  color: $purple-prime;
+}
+.room-book-card__daily-price {
+  grid-area: daily-price;
+  padding: 7px 0 0 50px;
+}
+.room-book-card__daily-price-num, .room-book-card__daily-price-day {
+  line-height: 18px;
+}
+.room-book-card__daily-price-num, .room-book-card__daily-price-day {
+  display: inline;
+  color: $dark-50;
+}
+.room-book-card__daily-price-num {
+  font-size: 14px;
+}
+.room-book-card__daily-price-day {
+  font-size: 12px;
+}
+.room-book-card-title-in {
+  grid-area: title-in;
+}
+.room-book-card-title-out {
+  grid-area: title-out;
+}
+.room-book-card-btn-in {
+  grid-area: btn-in;
+}
+.room-book-card-btn-out {
+  grid-area: btn-out;
+}
+.room-book-card-guests-title {
+  grid-area: guests-title;
+}
+.room-book-card-guests-btn {
+  grid-area: guests-btn;
+}
+.room-book-card__price {
+  grid-area: price;
+  display: grid;
+  align-items: center;
+  grid-template:
+    [price-calc] 'price-calc price-calc price-calc . price-sum' 24px [price-calc]
+    [gap] '. . . . .' 10px [gap]
+    [service-charge] 'service-charge-calc . service-charge-info . service-charge-sum' 24px [service-charge]
+    [gap] '. . . . .' 13px [gap]
+    [add-service-charge] 'add-service-charge-calc . add-service-charge-info . add-service-charge-sum' 36px [service-charge]
+    / 214px 5px 20px 23px 57px;
+}
+.room-book-card__price-calc {
+  grid-area: price-calc;
+}
+.room-book-card__price-sum {
+  grid-area: price-sum;
+  justify-self: end;
+}
+.room-book-card__service-charge-calc {
+  grid-area: service-charge-calc;
+}
+.room-book-card__service-charge-info {
+  grid-area: service-charge-info;
+}
+.room-book-card__service-charge-sum {
+  grid-area: service-charge-sum;
+  justify-self: end;
+}
+.room-book-card__add-service-charge {
+  grid-area: add-service-charge;
+}
+.room-book-card__add-service-charge-calc {
+  grid-area: add-service-charge-calc;
+  line-height: 18px;
+}
+.room-book-card__add-service-charge-info {
+  grid-area: add-service-charge-info;
+}
+.room-book-card__add-service-charge-sum {
+  grid-area: add-service-charge-sum;
+  justify-self: end;
+}
+.room-book-card__total-price {
+  grid-area: total-price;
+  display: flex;
+  align-items: flex-end;
+}
+.room-book-card__dashed-line {
+  width: 182px;
+  height: 4px;
+  border-top: 1px dashed $dark-25;
+}
+.room-book-card-book-btn {
+  grid-area: book-btn;
+}

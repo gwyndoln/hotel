@@ -4,28 +4,28 @@
   position: relative;
   opacity: 50%;
 }
-.dropdown-arrow {
+.dropdown-arrow, .dropdown-arrow::after {
   position: absolute;
+  background: $dark-100;
+}
+.dropdown-arrow {
   top: 13px;
   left: 13px;
   width: 8px;
   height: 2px;
   transform: rotate(45deg);
-  background: $dark-100;
 }
 .dropdown-arrow::after {
   content: '';
-  position: absolute;
   width: 2px;
   height: 7px;
   left: 6px;
   top: -6px;
   transform: rotate(180deg);
-  background: $dark-100;
 }
-.dropdown-icon_dark {
+.dropdown-arrow_dark {
   opacity: 75%;
 }
-.dropdown-icon_expand {
+.dropdown-arrow_rotate {
   transform: rotate(180deg);
 }

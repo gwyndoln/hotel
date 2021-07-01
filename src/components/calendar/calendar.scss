@@ -1,0 +1,11 @@
+@import '../icons/arrow/arrow';
+
+.calendar {
+  width: 320px;
+  height: 369px;
+  background: white;
+  border: 1px solid $dark-25;
+  box-shadow: 0px 10px 20px $dark-5;
+  border-radius: 4px;
+  grid-area: calendar;
+}

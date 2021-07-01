@@ -1,5 +1,5 @@
 @import '../input/input';
-@import '../icons/button-arrow-icon/button-arrow-icon';
+@import '../icons/arrow/arrow';
 
 .sub-form {
   position: relative;
@@ -7,13 +7,13 @@
     width: 266px;
     padding-right: 44px;
   }
-  .arrow-button {
-    position: absolute;
-    top: 0px;
-    left: 222px;
-    width: 44px;
-    height: 44px;
-    border: none;
-    padding: 0;
-  }
+}
+.sub-form-arrow {
+  position: absolute;
+  top: 0px;
+  left: 222px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  padding: 0;
 }

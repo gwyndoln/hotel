@@ -1,8 +1,8 @@
 include ../input/input
-include ../icons/button-arrow-icon/button-arrow-icon
+include ../icons/arrow/arrow
 
 mixin sub-form
   form.sub-form
     +input({placeholder: 'Email'})
-    button(type='submit' value='' class='arrow-button')
-      +button-arrow-icon
+    button(type='submit' value='' class='sub-form-arrow')
+      +arrow

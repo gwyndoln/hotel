@@ -1,0 +1,12 @@
+mixin dropdown-arrow(options)
+
+  if !options
+    - options = {}
+
+  -
+    var iconClassName= 'dropdown-arrow-container'
+    iconClassName += options.dark ? ' dropdown-arrow_dark' : ''
+    iconClassName += options.rotate ? ' dropdown-icon_rotate' : ''
+
+  div(class = iconClassName)
+    .dropdown-arrow

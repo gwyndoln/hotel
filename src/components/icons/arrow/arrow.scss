@@ -1,11 +1,9 @@
-.button-icon {
+.arrow-icon {
   position: relative;
   width: 44px;
   height: 44px;
-  top: 0px;
-  left: 0px;
 }
-.button-arrow {
+.arrow {
   position: absolute;
   top: 21px;
   left: 15px;
@@ -13,7 +11,7 @@
   height: 2px;
   background: $purple-prime;
 }
-.button-arrow::after, .button-arrow::before {
+.arrow::after, .arrow::before {
   content: '';
   position: absolute;
   width: 2px;
@@ -21,11 +19,11 @@
   right: 1px;
   background: $purple-prime;
 }
-.button-arrow::after {
+.arrow::after {
   top: -8px;
   transform: rotate(-45deg);
 }
-.button-arrow::before {
+.arrow::before {
   top: -1.5px;
   transform: rotate(45deg);
 }

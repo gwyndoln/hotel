@@ -1,0 +1,13 @@
+include ../input/input
+include ../big-button/big-button
+include ../white-button/white-button
+
+.log-card
+  form.log-card__log-form
+    h1.log-card__title= 'Войти'
+    +input({class: 'log-card-email-input', placeholder: 'Email'})
+    +input({class: 'log-card-pass-input', placeholder: 'Пароль'})
+    +big-button({class: 'log-card-log-btn', text: 'ВОЙТИ'})
+  form.log-card__create-form
+    p.log-card__create-text= 'Нет аккаунта на Toxin?'
+    +white-button({class: 'log-card-create-btn', text: 'СОЗДАТЬ'})

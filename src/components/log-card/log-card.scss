@@ -1,0 +1,50 @@
+@import '../input/input';
+@import '../big-button/big-button';
+@import '../white-button/white-button';
+
+.log-card {
+  background: white;
+  width: 380px;
+  height: 358px;
+  padding: 40px 30px 30px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  grid-area: log-card;
+  display: grid;
+  grid-template: 
+    [log-form] 'log-form' 212px [log-form]
+    [gap] '.' 30px [gap]
+    [create-form] 'create-form' 44px [create-form];
+}
+.log-card__log-form {
+  grid-area: log-form;
+  display: grid;
+  grid-template: 
+  [header] 'header' 30px [header]
+  [gap] '.' 20px [gap]
+  [email-input] 'email-input' 44px [email-input]
+  [gap] '.' 10px [gap]
+  [pass-input] 'pass-input' 44px [pass-input]
+  [gap] '.' 20px [gap]
+  [log-btn] 'log-btn' 44px [log-btn];
+}
+.log-card-email-input {
+  grid-area: email-input;
+}
+.log-card-pass-input {
+  grid-area: pass-input;
+}
+.log-card-log-btn {
+  grid-area: log-btn;
+}
+.log-card__create-form {
+  grid-area: create-form;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.log-card__create-text {
+  line-height: 18px;
+  color: black;
+}

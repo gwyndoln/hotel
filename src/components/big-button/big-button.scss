@@ -1,6 +1,6 @@
 .big-button {
-  display:flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   border: none;
@@ -8,11 +8,14 @@
   height: 44px;
   border-radius: 30px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  .big-button__arrow {
+    position: absolute;
+    left: 275px;
+  }
+  .big-button__text {
+    color: white;
+  }
   .button-arrow, .button-arrow::after, .button-arrow::before {
     background: white;
   }
-}
-.big-button__text {
-  color: white;
-  padding-left: 91px;
 }

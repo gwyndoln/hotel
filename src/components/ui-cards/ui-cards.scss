@@ -1,6 +1,7 @@
 @import '../room-pick-card/room-pick-card';
 @import '../reg-card/reg-card';
 @import '../room-book-card/room-book-card';
+@import '../log-card/log-card';
 
 .ui-cards {
   background: #F4F4F6;
@@ -9,11 +10,11 @@
   grid-template: 
     [row1-start] 'room-pick room-book calendar' 374px [row1-end]
     [row2-start] '. room-book .' 40px [row2-end]
-    [row3-start] 'reg room-book room' 98px [row3-end]
-    [row4-start] 'reg . room' 40px [row4-end]
-    [row5-start] 'reg log room' 119px [row5-end]
-    [row6-start] 'reg log .' 40px [row6-end]
-    [row6-start] 'reg log room-2' auto [row6-end]
+    [row3-start] 'reg-card room-book room' 98px [row3-end]
+    [row4-start] 'reg-card . room' 40px [row4-end]
+    [row5-start] 'reg-card log-card room' 119px [row5-end]
+    [row6-start] 'reg-card log-card .' 40px [row6-end]
+    [row6-start] 'reg-card log-card room-2' auto [row6-end]
     / 380px 380px 320px;
   column-gap: 40px;
   padding: 150px 140px 140px 140px;

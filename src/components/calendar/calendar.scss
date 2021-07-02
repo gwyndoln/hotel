@@ -1,4 +1,5 @@
 @import '../icons/arrow/arrow';
+@import '../apply-box/apply-box';
 
 .calendar {
   width: 320px;
@@ -7,5 +8,107 @@
   border: 1px solid $dark-25;
   box-shadow: 0px 10px 20px $dark-5;
   border-radius: 4px;
+  padding: 19px;
   grid-area: calendar;
+  display: grid;
+  grid-template:
+    [month-slider] 'month-slider' 24px [month-slider]
+    [gap] '.' 30px [gap]
+    [weeks] 'weeks' 240px [weeks]
+    [gap] '.' 20px [gap]
+    [apply] 'apply' 15px [apply]
+  ;
+}
+.calendar__month-slider {
+  grid-area: month-slider;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+}
+.calendar__left-arrow, .calendar__right-arrow {
+  border: none;
+  padding: 4px;
+  width: 24px;
+}
+.calendar__left-arrow {
+  transform: rotate(180deg);
+}
+.calendar__weeeks {
+  grid-area: weeks;
+}
+.calendar__weekdays, .calendar__dates {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar__weekdays-day, .calendar__dates-date, .calendar__dates-prev-date, .calendar__dates-next-date {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar__dates-date {
+  position: relative;
+}
+.calendar__weekdays-day-name {
+  color: $purple-prime;
+}
+.calendar__dates-prev-date-num, .calendar__dates-date-num, .calendar__dates-next-date-num {
+  font-family: $font-stack-regular;
+}
+.calendar__dates-prev-date-num, .calendar__dates-next-date-num {
+  color: $dark-25;
+}
+.calendar__dates-date-num {
+  position: absolute;
+  color: $dark-50;
+}
+.calendar_apply-box {
+  grid-area: apply;
+}
+.calendar__dates-date_highlight {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 50%;
+  .calendar__dates-date-num {
+    color: white;
+    font-family: $font-stack-bold;
+  }
+}
+.calendar__dates-date_pick-start {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+  .calendar__dates-date-num {
+    color: white;
+    font-family: $font-stack-bold;
+  }
+  .calendar__interval {
+    display: block;
+    border-radius: 50% 0 0 50%;
+  }
+}
+.calendar__dates-date_pick-end {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+  .calendar__dates-date-num {
+    color: white;
+    font-family: $font-stack-bold;
+  }
+  .calendar__interval {
+    display: block;
+    border-radius: 0 50% 50% 0;
+  }
+}
+.calendar__dates-date_pick-interval {
+  .calendar__interval {
+    display: block;
+  }
+}
+.calendar__interval {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25;
+  display: none;
+  position: absolute;
 }

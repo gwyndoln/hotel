@@ -1,0 +1,11 @@
+.clear-button, .apply-button {
+  border: none;
+}
+.apply-box {
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.clear-button-text, .apply-button-text {
+  color: $purple-prime;
+}

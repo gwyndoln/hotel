@@ -1,4 +1,5 @@
 include __item_count/dropdown-menu__item_count
+include ../../apply-box/apply-box
 
 mixin dropdown-menu(options)
 
@@ -13,7 +14,4 @@ mixin dropdown-menu(options)
   ul(class = menuClass)
     block
     .dropdown-menu__apply-box
-      button.clear-button(type='reset')
-        h3.clear-button-text= 'ОЧИСТИТЬ'
-      button.apply-button(type='button')
-        h3.apply-button-text= 'ПРИМЕНИТЬ'
+      +apply-box

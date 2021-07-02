@@ -1,23 +1,23 @@
 .arrow-icon {
   position: relative;
-  width: 44px;
-  height: 44px;
+  width: 16px;
+  height: 16px;
+}
+.arrow, .arrow::after, .arrow::before {
+  position: absolute;
+  background: $purple-prime;
 }
 .arrow {
-  position: absolute;
-  top: 21px;
-  left: 15px;
+  top: 7px;
+  left: 0px;
   width: 13px;
   height: 2px;
-  background: $purple-prime;
 }
 .arrow::after, .arrow::before {
   content: '';
-  position: absolute;
   width: 2px;
   height: 11px;
   right: 1px;
-  background: $purple-prime;
 }
 .arrow::after {
   top: -8px;

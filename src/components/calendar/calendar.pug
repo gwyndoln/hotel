@@ -1,5 +1,39 @@
 include ../icons/arrow/arrow
+include ../apply-box/apply-box
 
 .calendar
   .calendar__month-slider
-    .calendar__left-arrow
+    button.calendar__left-arrow(type = 'button')
+      +arrow
+    h2.calendar__month= 'Август 2019'
+    button.calendar__right-arrow(type = 'button')
+      +arrow
+
+  .calendar__weeeks
+    - var weekdays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
+    ul.calendar__weekdays
+      each weekday in weekdays
+        li.calendar__weekdays-day
+          h3.calendar__weekdays-day-name= weekday
+    -
+      var n = 1
+      var m = 28
+      var datesDateClass
+    ul.calendar__dates
+      while m < 31
+        li.calendar__dates-prev-date
+          h3.calendar__dates-prev-date-num= `${m++}`
+      while n < 32
+        -
+          datesDateClass = n == 8 ? 'calendar__dates-date calendar__dates-date_highlight'
+          : n == 19 ? 'calendar__dates-date calendar__dates-date_pick-start'
+          : n == 23 ? 'calendar__dates-date calendar__dates-date_pick-end'
+          : n > 19 && n < 23 ? 'calendar__dates-date calendar__dates-date_pick-interval'
+          : 'calendar__dates-date'
+        li(class = datesDateClass)
+          .calendar__interval
+          h3.calendar__dates-date-num= `${n++}`
+      li.calendar__dates-next-date
+        h3.calendar__dates-next-date-num= '1'
+  .calendar_apply-box
+    +apply-box

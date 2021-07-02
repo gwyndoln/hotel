@@ -1,4 +1,5 @@
 @import '__item_count/dropdown-menu__item_count';
+@import '../../apply-box/apply-box';
 
 .dropdown-menu {
   border: 1px solid $dark-50;
@@ -11,19 +12,13 @@
 }
 .dropdown-menu_applicable {
   .dropdown-menu__apply-box {
-    height: 15px;
-    display: flex;
-    justify-content: space-between;
     margin: 21px 0 12px 0;
-  }
-  .clear-button, .apply-button {
-    border: none;
   }
   .clear-button {
     visibility: hidden;
   }
-  .clear-button-text, .apply-button-text {
-    color: $purple-prime;
+  .dropdown-menu__apply-box {
+    display: block;
   }
 }
 .dropdown-menu_applicable-clear {

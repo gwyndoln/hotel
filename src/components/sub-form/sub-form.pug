@@ -3,6 +3,6 @@ include ../icons/arrow/arrow
 
 mixin sub-form
   form.sub-form
-    +input({placeholder: 'Email'})
-    button(type='submit' value='' class='sub-form-arrow')
+    +input({class: 'sub-form-input', placeholder: 'Email', width: 'middle'})
+    button(type = 'submit' class = 'sub-form-arrow')
       +arrow

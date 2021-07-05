@@ -1,5 +1,5 @@
 @import '../input/input';
-@import '../radio-button/radio-button';
+@import '../gender-block/gender-block';
 @import '../toggle/toggle';
 @import '../big-button/big-button';
 @import '../default-button/default-button';
@@ -19,7 +19,7 @@
     [gap] '.' 28px [gap]
     [log-form] 'log-form' 44px [log-form];
 }
-.reg-card__reg-form {
+.reg-card-reg-form {
   grid-area: reg-form;
   display: grid;
   grid-template:
@@ -54,11 +54,8 @@
 .reg-card-last-name {
   grid-area: last-name;
 }
-.reg-card__radio-group {
+.reg-card-gender {
   grid-area: radio-group;
-  display: flex;
-  justify-content: space-between;
-  width: 220px;
 }
 .reg-card-date-title {
   grid-area: date-title;
@@ -81,7 +78,7 @@
 .reg-card-pay-btn {
   grid-area: pay-btn;
 }
-.reg-card__log-form {
+.reg-card-mini-log-form {
   grid-area: log-form;
   display: grid;
   align-items: center;

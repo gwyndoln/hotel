@@ -1,10 +1,9 @@
-@import 'text-field-default/text-field-default';
-@import 'text-field-hover/text-field-hover';
-@import 'dropdown-text-field/dropdown-text-field';
-@import 'text-field-masked/text-field-masked';
-@import 'dropdown-date/dropdown-date';
-@import 'dropdown-filter-date/dropdown-filter-date';
-@import 'text-field-subscription/text-field-subscription';
+@import '../input/input';
+@import '../dropdown/dropdown-button/dropdown-button';
+@import '../sub-form/sub-form';
+
+
+
 @import 'dropdown-default/dropdown-default';
 @import 'dropdown-expanded-1/dropdown-expanded-1';
 @import 'dropdown-expanded-2/dropdown-expanded-2';
@@ -28,12 +27,65 @@
   position: relative;
   padding: 143px 0px 0px 141px;
   display: grid;
-  grid-template-columns: 320px 126px 320px 72px 320px;
-  grid-template-rows: 65px 20px 65px 19px 65px 21px 70px 35px 65px 40px 65px 40px 65px 98px 64px 20px 182px 40px 44px 20px 215px 103px 158px;
+  grid-template:
+    [start] 'ui-input . . . .' 65px [row2]
+    [gap] '. . . . .' 20px [gap]
+    [row3] 'ui-hover-input . . . .' 65px [row4]
+    [gap] '. . . . .' 19px [gap]
+    [row5] 'ui-dropdown-button . . . .' 65px [row6]
+    [gap] '. . . . .' 21px [gap]
+    [row7] 'ui-date-input . . . .' 70px [row8]
+    [gap] '. . . . .' 35px [gap]
+    [row9] 'ui-date-dropdown . . . .' 65px [row10]
+    [gap] '. . . . .' 40px [gap]
+    [row11] 'ui-filter-date-dropdown . . . .' 65px [row12]
+    [gap] '. . . . .' 40px [gap]
+    [row13] 'ui-sub-form . . . .' 65px [row14]
+    [gap] '. . . . .' 98px [gap]
+    [row15] '. . . . .' 64px [row16]
+    [gap] '. . . . .' 20px [gap]
+    [row17] '. . . . .' 182px [row18]
+    [gap] '. . . . .' 40px [gap]
+    [row19] '. . . . .' 44px [row20]
+    [gap] '. . . . .' 20px [gap]
+    [row21] '. . . . .' 215px [row22]
+    [gap] '. . . . .' 103px [gap]
+    [row23] '. . . . .' 158px [end]
+    / 320px 126px 320px 72px 320px;
   height: 1853px;
-  .logo {
-    position: absolute;
-    left: 30px;
-    top: 30px;
+}
+.ui-form-elements-logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.ui-input {
+  grid-area: ui-input;
+}
+.ui-hover-input {
+  grid-area: ui-hover-input;
+  .input {
+    border-color: $dark-50;
   }
+  .input::placeholder {
+    color: $dark-75;
+  }
+}
+.ui-dropdown-button {
+  grid-area: ui-dropdown-button;
+}
+.ui-date-input {
+  grid-area: ui-date-input;
+}
+.ui-date-dropdown {
+  grid-area: ui-date-dropdown;
+  display: grid;
+  grid-template: 15px 44px / 150px 150px;
+  gap: 5px 20px;
+}
+.ui-filter-date-dropdown {
+  grid-area: ui-filter-date-dropdown;
+}
+.ui-sub-form {
+  grid-area: ui-sub-form;
 }

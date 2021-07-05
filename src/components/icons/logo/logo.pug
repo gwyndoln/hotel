@@ -1,2 +1,10 @@
-mixin logo
-  .logo
+mixin logo(options)
+
+  if !options
+    - options = {}
+
+  -
+    var logoClassName = 'logo'
+    logoClassName += options.class ? ` ${options.class}` : ''
+
+  div(class = logoClassName)

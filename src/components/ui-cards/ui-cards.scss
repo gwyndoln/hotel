@@ -1,8 +1,9 @@
-@import '../room-pick-card/room-pick-card';
+@import '../room-pick-form/room-pick-form';
 @import '../reg-card/reg-card';
 @import '../room-book-card/room-book-card';
 @import '../log-card/log-card';
 @import '../calendar/calendar';
+@import '../room-card/room-card';
 
 .ui-cards {
   background: #F4F4F6;
@@ -13,15 +14,15 @@
     [row2-start] '. room-book .' 40px [row2-end]
     [row3-start] 'reg-card room-book room' 98px [row3-end]
     [row4-start] 'reg-card . room' 40px [row4-end]
-    [row5-start] 'reg-card log-card room' 119px [row5-end]
+    [row5-start] 'reg-card log-card room-888' 119px [row5-end]
     [row6-start] 'reg-card log-card .' 40px [row6-end]
-    [row6-start] 'reg-card log-card room-2' auto [row6-end]
+    [row6-start] 'reg-card log-card room-840' auto [row6-end]
     / 380px 380px 320px;
   column-gap: 40px;
   padding: 150px 140px 140px 140px;
-  .logo {
-    position: absolute;
-    left: 30px;
-    top: 30px;
-  }
+}
+.ui-cards-logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
 }

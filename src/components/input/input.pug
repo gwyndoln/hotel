@@ -6,6 +6,7 @@ mixin input(options)
   -
     var inputClassName = 'text-field input'
     inputClassName += options.class ? ` ${options.class}` : ''
+    inputClassName += options.width ? ` text-field_width_${options.width}` : ''
 
   label.input__label_hidden(for = options.id)
   input(class = inputClassName, type = options.type, id = options.id, name = options.name,

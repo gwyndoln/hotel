@@ -1,6 +1,6 @@
 @import '../dropdown/dropdown-button/dropdown-button';
 
-.room-pick-card {
+.room-pick-form {
   grid-area: room-pick;
   background: white;
   width: 380px;
@@ -24,27 +24,27 @@
     [pick-btn] 'pick-btn pick-btn pick-btn' 44px [pick-btn]
     / 150px 20px 150px;
 }
-.room-pick-card__title {
+.room-pick-form__title {
   grid-area: header;
 }
-.room-pick-card-date-in-title {
+.room-pick-form-date-in-title {
   grid-area: date-in-title;
 }
-.room-pick-card-date-out-title {
+.room-pick-form-date-out-title {
   grid-area: date-out-title;
 }
-.room-pick-card-date-in-btn {
+.room-pick-form-date-in-btn {
   grid-area: date-in-btn;
 }
-.room-pick-card-date-out-btn {
+.room-pick-form-date-out-btn {
   grid-area: date-out-btn;
 }
-.room-pick-card-guests-title {
+.room-pick-form-guests-title {
   grid-area: guests-title;
 }
-.room-pick-card-guests-btn {
+.room-pick-form-guests-btn {
   grid-area: guests-btn;
 }
-.room-pick-card-pick-btn {
+.room-pick-form-pick-btn {
   grid-area: pick-btn;
 }

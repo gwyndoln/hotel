@@ -1,12 +1,32 @@
+include ../input/input
+include ../dropdown/dropdown-button/dropdown-button
+include ../sub-form/sub-form
+
 .ui-form-elements
-  +logo
-  include text-field-default/text-field-default
-  include text-field-hover/text-field-hover
-  include dropdown-text-field/dropdown-text-field
-  include text-field-masked/text-field-masked
-  include dropdown-date/dropdown-date
-  include dropdown-filter-date/dropdown-filter-date
-  include text-field-subscription/text-field-subscription
+  +logo({class: 'ui-form-elements-logo'})
+  .ui-input
+    +title-box({title: 'TEXT FIELD', add: 'DEFAULT'}) 
+    +input({placeholder: 'Email'})
+  .ui-hover-input
+    +title-box({title: 'TEXT FIELD', add: 'HOVER / FOCUS'})
+    +input({placeholder: 'This is pretty awesome'})
+  .ui-dropdown-button
+    +title-box({title: 'DROPDOWN'})
+    +dropdown-button({text: 'Сколько гостей'})
+  .ui-date-input
+    +title-box({title: 'MASKED TEXT FIELD'})
+    +input({id: 'date', name: 'birth-date', placeholder: 'ДД.ММ.ГГГГ'})
+  .ui-date-dropdown
+    +title-box({title:'DATE DROPDOWN'})
+    +title-box({title:'DATE DROPDOWN'})
+    +dropdown-button({text: 'ДД.ММ.ГГГГ', width: 'mini'})
+    +dropdown-button({text: '19.08.2019', width: 'mini'})
+  .ui-filter-date-dropdown
+    +title-box({title: 'FILTER DATE DROPDOWN'})
+    +dropdown-button({text: '19 авг - 23 авг', width: 'middle'})
+  .ui-sub-form
+    +title-box({title: 'SUBSCRIPTION TEXT FIELD'})
+    +sub-form
   include dropdown-default/dropdown-default
   include dropdown-expanded-1/dropdown-expanded-1
   include dropdown-expanded-2/dropdown-expanded-2

@@ -1,0 +1,11 @@
+include ../dropdown/dropdown-button/dropdown-button
+
+form.room-pick-form
+  h1.room-pick-form__title= 'Найдём номера под ваши пожелания'
+  +title-box({class: 'room-pick-form-date-in-title', title: 'ПРИБЫТИЕ'})
+  +dropdown-button({class: 'room-pick-form-date-in-btn', text: 'ДД.ММ.ГГГГ', width: 'mini'})
+  +title-box({class: 'room-pick-form-date-out-title', title: 'ВЫЕЗД'})
+  +dropdown-button({class: 'room-pick-form-date-out-btn', text: 'ДД.ММ.ГГГГ', width: 'mini'})
+  +title-box({class: 'room-pick-form-guests-title', title: 'ГОСТИ'})
+  +dropdown-button({class: 'room-pick-form-guests-btn', text: 'Сколько гостей'})
+  +big-button({class: 'room-pick-form-pick-btn', type: 'button', text: 'ПОДОБРАТЬ НОМЕР'})

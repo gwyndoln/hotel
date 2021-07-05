@@ -1,0 +1,14 @@
+include ../radio-button/radio-button
+
+mixin gender-block(options)
+
+  if !options
+    - options = {}
+
+  -
+    var genderClassName = 'gender-block'
+    genderClassName += options.class ? ` ${options.class}` : ''
+
+  div(class = genderClassName)
+    +radio-button({text: 'Мужчина', name: options.name, id: 'reg-male', checked: true})
+    +radio-button({text: 'Женщина', name: options.name, id: 'reg-female'})

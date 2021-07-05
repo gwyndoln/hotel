@@ -1,18 +1,16 @@
 include ../input/input
-include ../radio-button/radio-button
+include ../gender-block/gender-block
 include ../title-box/title-box
 include ../toggle/toggle
 include ../big-button/big-button
 include ../white-button/white-button
 
 .reg-card
-  form.reg-card__reg-form
+  form.reg-card-reg-form
     h1.reg-card__reg-title= 'Регистрация аккаунта'
     +input({class: 'reg-card-first-name', id: 'first-name', placeholder: 'Имя'})
     +input({class: 'reg-card-last-name', id: 'last-name', placeholder: 'Фамилия'})
-    .reg-card__radio-group
-      +radio-button({text: 'Мужчина', name: 'reg-gender', id: 'reg-male', checked: true})
-      +radio-button({text: 'Женщина', name: 'reg-gender', id: 'reg-female'})
+    +gender-block({class: 'reg-card-gender', name: 'reg-gender'})
     +title-box({class: 'reg-card-date-title', title: 'ДАТА РОЖДЕНИЯ'})
     +input({class: 'reg-card-date-input', id: 'date', name:'birth-date', placeholder: 'ДД.ММ.ГГГГ'})
     +title-box({class: 'reg-card-data-title', title: 'ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС'})
@@ -20,6 +18,6 @@ include ../white-button/white-button
     +input({class: 'reg-card-pass-input', id: 'date', name: 'pass', placeholder: 'Пароль'})
     +toggle({class: 'reg-card-toggle-offer', text: 'Получать спецпредложения', id: 'reg-offer', checked: false})
     +big-button({class: 'reg-card-pay-btn', text: 'ПЕРЕЙТИ К ОПЛАТЕ'})
-  form.reg-card__log-form
+  form.reg-card-mini-log-form
     p.reg-card__log-text= 'Уже есть аккаунт на Toxin'
     +white-button({class: 'reg-card-log-btn', text: 'ВОЙТИ'})

@@ -1,7 +1,13 @@
+include ../room-card/room-card
+
 .ui-cards
-  +logo
-  include ../room-pick-card/room-pick-card
-  include ../reg-card/reg-card
+  +logo({class: 'ui-cards-logo'})
+  .ui-cards-room-pick-form
+    include ../room-pick-form/room-pick-form
+  .ui-cards-reg-card
+    include ../reg-card/reg-card
   include ../room-book-card/room-book-card
   include ../log-card/log-card
   include ../calendar/calendar
+  +room-card({image: 'room-888.jpg'})
+  +room-card({image: 'room-840.jpg'})

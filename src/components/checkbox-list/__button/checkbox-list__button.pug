@@ -2,5 +2,5 @@ include ../../icons/dropdown-arrow/dropdown-arrow
 
 mixin checkbox-list__button(options)
   button.checkbox-list__button(type = 'button')
-    h3= options.text 
-    +dropdown-arrow({rotate: options.rotate})
+    h3.checkbox-list__button-text= options.text 
+    +dropdown-arrow({isExpand: options.isExpand})

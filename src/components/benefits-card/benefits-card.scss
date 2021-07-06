@@ -1,11 +1,11 @@
 .benefits-card {
   display: grid;
-  gap: 0px 10px;
-  grid-template-columns: 48px 222px;
-  grid-template-rows: 24px 24px;
-  grid-template-areas: 
-    'image title'
-    'image text';
+  grid-template:
+    [title] 'image . title' 24px [title]
+    [text] 'image . text' 24px [text]
+    [gap] '. . .' 20px [gap]
+    [plank] 'plank plank plank' [plank]
+    / 48px 10px 222px;
 }
 .benefits-card__image-wrapper {
   grid-area: image;
@@ -21,9 +21,9 @@
   grid-area: text;
 }
 .benefits-card__plank {
+  grid-area: plank;
+  margin-bottom: 20px;
   width: 280px;
   height: 1px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   background-color: $dark-10;
 }

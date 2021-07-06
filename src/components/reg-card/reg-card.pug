@@ -1,5 +1,5 @@
 include ../input/input
-include ../gender-block/gender-block
+include ../gender-buttons/gender-buttons
 include ../title-box/title-box
 include ../toggle/toggle
 include ../big-button/big-button
@@ -10,7 +10,7 @@ include ../white-button/white-button
     h1.reg-card__reg-title= 'Регистрация аккаунта'
     +input({class: 'reg-card-first-name', id: 'first-name', placeholder: 'Имя'})
     +input({class: 'reg-card-last-name', id: 'last-name', placeholder: 'Фамилия'})
-    +gender-block({class: 'reg-card-gender', name: 'reg-gender'})
+    +gender-buttons({class: 'reg-card-gender', name: 'reg-gender'})
     +title-box({class: 'reg-card-date-title', title: 'ДАТА РОЖДЕНИЯ'})
     +input({class: 'reg-card-date-input', id: 'date', name:'birth-date', placeholder: 'ДД.ММ.ГГГГ'})
     +title-box({class: 'reg-card-data-title', title: 'ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС'})

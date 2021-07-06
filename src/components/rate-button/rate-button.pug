@@ -6,5 +6,6 @@ mixin rate-button(options)
   -
     var rateButtonClassName = 'rate-button'
     rateButtonClassName +=  0 < options.quantity < 5 ? ` rate-button_quantity_${options.quantity}` : ''
+    rateButtonClassName += options.class ? ` ${options.class}` : ''
 
   div(class= rateButtonClassName)

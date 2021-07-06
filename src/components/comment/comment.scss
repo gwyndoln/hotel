@@ -3,34 +3,31 @@
 .comment {
   position: relative;
   display: grid;
-  gap: 0px 12px;
-  grid-template-columns: 48px 653px;
-  grid-template-rows: 24px 24px 10px 72px;
-  grid-template-areas:
-  'image name'
-  'image date'
-  '. .'
-  'like text';
+  grid-template:
+    [comment-name] 'comment-image . comment-name' 24px [comment-name]
+    [comment-date] 'comment-image . comment-date' 24px [comment-date]
+    [gap] '. . .' 10px [gap]
+    [comment-like] 'comment-like . comment-text' 72px [comment-like]
+    / 48px 12px 653px;
   .like-button {
-    margin-left: 6px;
-    margin-top: 2px;
-    grid-area: like;
+    grid-area: comment-like;
+    margin: 1px 0 0 6px;
   }
 }
 .comment__image {
+  grid-area: comment-image;
   position: absolute;
   left: -18px;
   top: -10px;
-  grid-area: image;
   z-index: -1;
 }
 .comment__name {
-  grid-area: name;
+  grid-area: comment-name;
   font-family: $font-stack-bold;
 }
 .comment__date {
-  grid-area: date;
+  grid-area: comment-date;
 }
 .comment__text {
-  grid-area: text;
+  grid-area: comment-text;
 }

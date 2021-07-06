@@ -4,9 +4,9 @@ mixin dropdown-arrow(options)
     - options = {}
 
   -
-    var iconClassName= 'dropdown-arrow-container'
-    iconClassName += options.dark ? ' dropdown-arrow_dark' : ''
-    iconClassName += options.rotate ? ' dropdown-icon_rotate' : ''
+    var iconClassName= 'dropdown-arrow'
+    iconClassName += options.isDark ? ' dropdown-arrow_dark' : ''
+    iconClassName += options.isExpand ? ' dropdown-arrow_expand' : ''
 
   div(class = iconClassName)
-    .dropdown-arrow
+    .dropdown-arrow__arrow

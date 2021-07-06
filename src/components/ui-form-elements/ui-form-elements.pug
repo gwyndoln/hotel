@@ -1,6 +1,20 @@
 include ../input/input
-include ../dropdown/dropdown-button/dropdown-button
+include ../dropdown/dropdown
 include ../sub-form/sub-form
+include ../checkbox-list/checkbox-list
+include ../benefits-card/benefits-card
+include ../gender-buttons/gender-buttons
+include ../toggle/toggle
+include ../like-button/like-button
+include ../rate-button/rate-button
+include ../comment/comment
+include ../range-slider/range-slider
+include ../default-button/default-button
+include ../white-button/white-button
+include ../link/link
+include ../big-button/big-button
+include ../pagination/pagination
+include ../bullet-list/bullet-list
 
 .ui-form-elements
   +logo({class: 'ui-form-elements-logo'})
@@ -12,36 +26,116 @@ include ../sub-form/sub-form
     +input({placeholder: 'This is pretty awesome'})
   .ui-dropdown-button
     +title-box({title: 'DROPDOWN'})
-    +dropdown-button({text: 'Сколько гостей'})
+    +dropdown({text: 'Сколько гостей'})
   .ui-date-input
     +title-box({title: 'MASKED TEXT FIELD'})
     +input({id: 'date', name: 'birth-date', placeholder: 'ДД.ММ.ГГГГ'})
   .ui-date-dropdown
     +title-box({title:'DATE DROPDOWN'})
     +title-box({title:'DATE DROPDOWN'})
-    +dropdown-button({text: 'ДД.ММ.ГГГГ', width: 'mini'})
-    +dropdown-button({text: '19.08.2019', width: 'mini'})
+    +dropdown({text: 'ДД.ММ.ГГГГ', width: 'mini'})
+    +dropdown({text: '19.08.2019', width: 'mini'})
   .ui-filter-date-dropdown
     +title-box({title: 'FILTER DATE DROPDOWN'})
-    +dropdown-button({text: '19 авг - 23 авг', width: 'middle'})
+    +dropdown({text: '19 авг - 23 авг', width: 'middle'})
   .ui-sub-form
     +title-box({title: 'SUBSCRIPTION TEXT FIELD'})
     +sub-form
-  include dropdown-default/dropdown-default
-  include dropdown-expanded-1/dropdown-expanded-1
-  include dropdown-expanded-2/dropdown-expanded-2
-  include dropdown-expanded-3/dropdown-expanded-3
-  include expandable-checkbox-list/expandable-checkbox-list
-  include checkbox-buttons/checkbox-buttons
-  include expandable-checkbox-list-expand/expandable-checkbox-list-expand
-  include rich-checkbox-buttons/rich-checkbox-buttons
-  include radio-buttons/radio-buttons
-  include toggle-box/toggle-box
-  include like-buttons/like-buttons
-  include rate-buttons/rate-buttons
-  include benefits/benefits
-  include comment-block/comment-block
-  include bullet-list-block/bullet-list-block
-  include range-slider-block/range-slider-block
-  include buttons/buttons
-  include pagination-block/pagination-block
+  .ui-dropdown-default
+    +title-box({title:'DROPDOWN', add: 'DEFAULT'})
+    +dropdown({text: '2 спальни, 2 кровати...', width: 'middle', isDark: true})
+  .ui-dropdown-expanded
+    +title-box({title:'DROPDOWN', add: 'EXPANDED'})
+    +dropdown({text: '2 спальни, 2 кровати...', width: 'middle', isDark: true,
+    items: [{text: 'СПАЛЬНИ', count: '2'}]})
+      //+dropdown-menu({width: 'middle'})
+        //+item({text: 'СПАЛЬНИ', count: '2'})
+        //+item({text: 'КРОВАТИ', count: '2'})
+        //+item({text: 'ВАННЫЕ КОМНАТЫ', count: '0', minusTransparent: true})
+  .ui-checkbox-list-button
+    +checkbox-list__button({text:'EXPANDABLE CHECKBOX LIST'})
+  .ui-checkbox-list
+    +checkbox-list__button({text:'EXPANDABLE CHECKBOX LIST', isExpand: true})
+    +checkbox-list__menu
+      +checkbox({text: 'Завтрак', id: 'breakfast', checked: false})
+      +checkbox({text: 'Письменный стол', id: 'table', checked: true})
+      +checkbox({text: 'Стул для кормления', id: 'chair', checked: true})
+      +checkbox({text: 'Кроватка', id: 'crib', checked: true})
+      +checkbox({text: 'Телевизор', id: 'TV', checked: false})
+      +checkbox({text: 'Шампунь', id: 'shampoo', checked: false})
+  .ui-benefits
+    +benefits-card({title: 'Комфорт', text: 'Шумопоглощающие стены', image: 'smile'})
+    +benefits-card({title: 'Удобство', text: 'Окно в каждой из спален', image: 'hotel'})
+  .ui-checkbox-buttons
+    +title-box({title: 'CHECKBOX BUTTONS'})
+    +checkbox-list__menu
+      +checkbox({text:'Можно курить', id:'smoke', checked: false})
+      +checkbox({text: 'Можно с питомцами', id: 'pets', checked: true})
+      +checkbox({text: 'Можно пригласить гостей (до 10 человек)', id: 'guests', checked: true})
+  .ui-genders
+    +title-box({title: 'RADIO BUTTONS'})
+    +gender-buttons({class: 'ui-gender-buttons', name: 'ui-gender-buttons'})
+  .ui-toggles
+    +title-box({title: 'TOGGLE'})
+    +toggle({text: 'Получать спецпредложения', id: 'ui-offer', checked: true})
+    +toggle({text: 'Получать спецпредложения', id: 'ui-take-offer', checked: false})
+  .ui-like-buttons
+    +title-box({title: 'LIKE BUTTON'})
+    +like-button({class: 'ui-like-button-1', count: '2'})
+    +like-button({class: 'ui-like-button-2', count: '12', active: true})
+  .ui-rate-buttons
+    +title-box({title: 'RATE BUTTON'})
+    +rate-button({class: 'ui-rate-btn-1', quantity: '4'})
+    +rate-button({class: 'ui-rate-btn-2'})
+  .ui-dropdown-applicable
+    +title-box({title:'DROPDOWN'})
+    +dropdown({text: 'Сколько гостей...', isDark: true, applicable: true})
+      //+dropdown-menu({applicable: true})
+        +item({text: 'ВЗРОСЛЫЕ', count: 0, minusTransparent: true})
+        +item({text: 'ДЕТИ', count: 0, minusTransparent: true})
+        +item({text: 'МЛАДЕНЦЫ', count: 0, minusTransparent: true})
+  .ui-checkbox-buttons-rich
+    +title-box({title: 'RICH CHECKBOX BUTTONS'})
+    +checkbox-list__menu
+      +checkbox({text: 'Широкий коридор', addtext: 'Ширина коридоров в номере <br> не менее 91 см.',
+      id: 'corridor', checked: false})
+      +checkbox({text: 'Помощник для инвалидов',
+      addtext: 'На 1 этаже вас встретит специалист и проводит до номера.',
+      id: 'assistant', checked: false})
+  .ui-comment
+    +comment({image: 'image-1.jpg', likeCount: '12', likeActive: true,
+    name: 'Мурад Сарафанов', date: '5 дней назад',
+    text: 'Великолепный матрас на кровати в основной спальне! ' +
+    'А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. ' +
+    'Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+  .ui-range-slider
+    +title-box({title: 'RANGE SLIDER', add: '5 000₽ - 10 000₽'})
+    +range-slider
+  .ui-buttons
+    +title-box({title: 'BUTTONS'})
+    .buttons-container
+      +default-button({class: 'buttons-default-button', text: 'CLICK ME', type: 'button'})
+      +default-button({class: 'buttons-default-button_hover', text: 'CLICK ME', type: 'button'})
+      +white-button({class: 'buttons-white-button', text: 'CLICK ME', type: 'button'})
+      +white-button({class: 'buttons-white-button_hover', text: 'CLICK ME', type: 'button'})
+    .links-container
+      +link({class: 'links-link', href: '#', text: 'CLICK ME'})
+      +link({class: 'links-link_hover', href: '#', text: 'CLICK ME'})
+    +big-button({text: 'ПЕРЕЙТИ К ОПЛАТЕ', type: 'button'})
+  .ui-pagination
+    +title-box({title: 'PAGINATION'})
+    +pagination({first: '1', second: '2', third: '3', last: '15',
+    desc: '1 – 12 из 100+ вариантов аренды'})
+  .ui-dropdown-clear
+    +title-box({title:'DROPDOWN'})
+    +dropdown({text: '3 гостя', isDark: true, applicable: true, clear: true})
+      //+dropdown-menu({})
+        +item({text: 'ВЗРОСЛЫЕ', count: '2'})
+        +item({text: 'ДЕТИ', count: '1'})
+        +item({text: 'МЛАДЕНЦЫ', count: '0', minusTransparent: true})
+  .ui-bullet-list
+    +title-box({title: 'BULLET LIST'})
+    +bullet-list
+      +bullet-list__item({text: 'Нельзя с питомцами'})
+      +bullet-list__item({text: 'Без вечеринок и мероприятий'})
+      +bullet-list__item({text: 'Время прибытия — после 13:00, а выезд до 12:00'})

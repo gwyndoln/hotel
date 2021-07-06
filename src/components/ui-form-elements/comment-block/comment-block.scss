@@ -1,9 +1,0 @@
-@import '../../comment/comment';
-
-.comment-block {
-  grid-column-start: 3;
-  grid-row-start: 23;
-  .comment {
-    margin: 10px 0 0 -2px;
-  }
-}

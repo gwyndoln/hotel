@@ -1,56 +1,49 @@
 @import '../input/input';
-@import '../dropdown/dropdown-button/dropdown-button';
+@import '../dropdown/dropdown';
 @import '../sub-form/sub-form';
-
-
-
-@import 'dropdown-default/dropdown-default';
-@import 'dropdown-expanded-1/dropdown-expanded-1';
-@import 'dropdown-expanded-2/dropdown-expanded-2';
-@import 'dropdown-expanded-3/dropdown-expanded-3';
-@import 'expandable-checkbox-list/expandable-checkbox-list';
-@import 'checkbox-buttons/checkbox-buttons';
-@import 'expandable-checkbox-list-expand/expandable-checkbox-list-expand';
-@import 'rich-checkbox-buttons/rich-checkbox-buttons';
-@import 'radio-buttons/radio-buttons';
-@import 'toggle-box/toggle-box';
-@import 'like-buttons/like-buttons';
-@import 'rate-buttons/rate-buttons';
-@import 'benefits/benefits';
-@import 'comment-block/comment-block';
-@import 'bullet-list-block/bullet-list-block';
-@import 'range-slider-block/range-slider-block';
-@import 'buttons/buttons';
-@import 'pagination-block/pagination-block';
+@import '../checkbox-list/checkbox-list';
+@import '../benefits-card/benefits-card';
+@import '../gender-buttons/gender-buttons';
+@import '../toggle/toggle';
+@import '../like-button/like-button';
+@import '../rate-button/rate-button';
+@import '../comment/comment';
+@import '../range-slider/range-slider';
+@import '../default-button/default-button';
+@import '../white-button/white-button';
+@import '../link/link';
+@import '../big-button/big-button';
+@import '../pagination/pagination';
+@import '../bullet-list/bullet-list';
 
 .ui-form-elements {
   position: relative;
   padding: 143px 0px 0px 141px;
   display: grid;
   grid-template:
-    [start] 'ui-input . . . .' 65px [row2]
-    [gap] '. . . . .' 20px [gap]
-    [row3] 'ui-hover-input . . . .' 65px [row4]
-    [gap] '. . . . .' 19px [gap]
-    [row5] 'ui-dropdown-button . . . .' 65px [row6]
-    [gap] '. . . . .' 21px [gap]
-    [row7] 'ui-date-input . . . .' 70px [row8]
-    [gap] '. . . . .' 35px [gap]
-    [row9] 'ui-date-dropdown . . . .' 65px [row10]
-    [gap] '. . . . .' 40px [gap]
-    [row11] 'ui-filter-date-dropdown . . . .' 65px [row12]
-    [gap] '. . . . .' 40px [gap]
-    [row13] 'ui-sub-form . . . .' 65px [row14]
+    [start] 'ui-input . ui-checkbox-buttons . ui-range-slider' 65px [row2]
+    [gap] '. . ui-checkbox-buttons . .' 20px [gap]
+    [row2] 'ui-hover-input . ui-checkbox-buttons . ui-buttons' 65px [row3]
+    [gap] '. . . . ui-buttons' 19px [gap]
+    [row3] 'ui-dropdown-button . ui-genders . ui-buttons' 65px [row4]
+    [gap] '. . . . ui-buttons' 21px [gap]
+    [row4] 'ui-date-input . ui-toggles . ui-buttons' 70px [row5]
+    [gap] '. . ui-toggles . ui-buttons' 35px [gap]
+    [row5] 'ui-date-dropdown . ui-like-buttons . ui-pagination' 65px [row6]
+    [gap] '. . ui-like-buttons . ui-pagination' 40px [gap]
+    [row6] 'ui-filter-date-dropdown . ui-rate-buttons . ui-pagination' 65px [row7]
+    [gap] '. . ui-rate-buttons . .' 40px [gap]
+    [row7] 'ui-sub-form . . . .' 65px [row8]
     [gap] '. . . . .' 98px [gap]
-    [row15] '. . . . .' 64px [row16]
-    [gap] '. . . . .' 20px [gap]
-    [row17] '. . . . .' 182px [row18]
+    [row8] 'ui-dropdown-default . ui-dropdown-applicable . ui-dropdown-clear' 64px [row9]
+    [gap] '. . ui-dropdown-applicable . ui-dropdown-clear' 20px [gap]
+    [row9] 'ui-dropdown-expanded . ui-dropdown-applicable . ui-dropdown-clear' 182px [row10]
     [gap] '. . . . .' 40px [gap]
-    [row19] '. . . . .' 44px [row20]
-    [gap] '. . . . .' 20px [gap]
-    [row21] '. . . . .' 215px [row22]
+    [row10] 'ui-checkbox-list-button . ui-checkbox-buttons-rich . ui-bullet-list' 44px [row11]
+    [gap] '. . ui-checkbox-buttons-rich . ui-bullet-list' 20px [gap]
+    [row11] 'ui-checkbox-list . ui-checkbox-buttons-rich . ui-bullet-list' 215px [row12]
     [gap] '. . . . .' 103px [gap]
-    [row23] '. . . . .' 158px [end]
+    [row12] 'ui-benefits . ui-comment ui-comment ui-comment' 158px [end]
     / 320px 126px 320px 72px 320px;
   height: 1853px;
 }
@@ -88,4 +81,151 @@
 }
 .ui-sub-form {
   grid-area: ui-sub-form;
+}
+.ui-dropdown-default {
+  grid-area: ui-dropdown-default;
+  width: 266px;
+}
+.ui-dropdown-expanded {
+  grid-area: ui-dropdown-expanded;
+  width: 266px;
+}
+.ui-checkbox-list-button {
+  grid-area: ui-checkbox-list-button;
+}
+.ui-checkbox-list {
+  grid-area: ui-checkbox-list;
+}
+.ui-benefits {
+  grid-area: ui-benefits;
+}
+.ui-checkbox-buttons {
+  grid-area: ui-checkbox-buttons;
+  .title-box {
+    margin-bottom: 17px;
+  }
+}
+.ui-genders {
+  grid-area: ui-genders;
+  .title-box {
+    margin-bottom: 14px;
+  }
+}
+.ui-toggles {
+  grid-area: ui-toggles;
+  .title-box {
+    margin: 7px 0px 13px 0px;
+  }
+}
+.ui-like-buttons {
+  grid-area: ui-like-buttons;
+  margin-top: 31px;
+  display: grid;
+  grid-template:
+    [like-title] 'like-title like-title like-title' 15px [like-title]
+    [gap] '. . .' 16px [gap]
+    [like-buttons] 'like-btn-1 . like-btn-2' 20px [like-buttons]
+    / 40px 10px 40px;
+  .title-box {
+    grid-area: like-title;
+  }
+  .ui-like-button-1 {
+    grid-area: like-btn-1;
+  }
+  .ui-like-button-2 {
+    grid-area: like-btn-2;
+  }
+}
+.ui-rate-buttons {
+  grid-area: ui-rate-buttons;
+  margin-top: 17px;
+  display: grid;
+  grid-template:
+    [rate-title] 'rate-title rate-title rate-title' 15px [rate-title]
+    [gap] '. . .' 16px [gap]
+    [rate-stars] 'ui-rate-btn-1 . ui-rate-btn-2' 24px [rate-stars]
+    / 120px 20px 120px;
+  .title-box {
+    grid-area: rate-title;
+  }
+  .ui-rate-btn-1 {
+    grid-area: ui-rate-btn-1;
+  }
+  .ui-rate-btn-2 {
+    grid-area: ui-rate-btn-2;
+  }
+}
+.ui-dropdown-applicable {
+  grid-area: ui-dropdown-applicable;
+}
+.ui-checkbox-buttons-rich {
+  grid-area: ui-checkbox-buttons-rich;
+  .title-box {
+    margin: 14px 0 16px 0;
+  }
+}
+.ui-comment {
+  grid-area: ui-comment;
+  margin: 10px 0 0 -2px;
+}
+.ui-range-slider {
+  grid-area: ui-range-slider;
+  .title-box {
+    width: 266px;
+    margin-bottom: 16px;
+  }
+}
+.ui-buttons {
+  grid-area: ui-buttons;
+  .title-box {
+    margin: 3px 0 16px 0;
+  }
+  .buttons-container {
+    display: grid;
+    grid-template:
+      [default-button] 'default-button . default-button_hover' 44px [default-button]
+      [gap] '. . .' 30px [gap]
+      [white-button] 'white-button . white-button_hover' 44px [white-button] / 99px 20px 99px;
+    margin-bottom: 31px;
+  }
+  .buttons-default-button {
+    grid-area: default-button;
+  }
+  .buttons-container .buttons-default-button_hover {
+    grid-area: default-button_hover;
+    background: linear-gradient(180deg, rgba(188, 156, 255, .5) 0%, rgba(139, 164, 249, .5) 100%);
+  }
+  .buttons-white-button {
+    grid-area: white-button;
+  }
+  .buttons-white-button_hover {
+    grid-area: white-button_hover;
+  }
+  .buttons-white-button_hover .white-button__border {
+    background: linear-gradient(180deg, rgba(188, 156, 255, .5) 0%, rgba(139, 164, 249, .5) 100%);
+  }
+  .links-container {
+    display: flex;
+    justify-content: space-between;
+    width: 142px;
+    margin-bottom: 30px;
+  }
+  .links-link_hover .link__text  {
+    color: $dark-50;
+  }
+}
+.ui-pagination {
+  grid-area: ui-pagination;
+  .title-box {
+    margin: 38px 0 16px 0;
+  }
+}
+.ui-dropdown-clear {
+  grid-area: ui-dropdown-clear;
+}
+.ui-bullet-list {
+  grid-area: ui-bullet-list;
+  .title-box {
+    margin: 14px 0 13px 0;
+  }
 }

@@ -1,11 +1,91 @@
-@import 'dropdown-button/dropdown-button';
-@import 'dropdown-menu/dropdown-menu';
 @import '../text-field/text-field';
+@import '../icons/dropdown-arrow/dropdown-arrow';
+@import '../apply-box/apply-box';
 
-.dropdown {
-  border-color: $dark-50;
-  .dropdown-button {
-    border-radius: 4px 4px 0 0;
-    border-color: $dark-50;
+.dropdown__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown__menu {
+  border: 1px solid $dark-50;
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  padding: 5px 6px 0px 14px;
+}
+.dropdown__apply-box {
+  display: none;
+}
+.dropdown_applicable {
+  .dropdown__apply-box {
+    margin: 21px 0 12px 0;
   }
+  .clear-button {
+    visibility: hidden;
+  }
+  .dropdown__apply-box {
+    display: block;
+  }
+}
+.dropdown_applicable-clear {
+  .clear-button {
+    visibility: visible;
+  }
+}
+.dropdown__item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.dropdown__text {
+  padding-bottom: 1px;
+}
+.dropdown__counter {
+  width: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown__counter-count {
+  order: 2;
+}
+.dropdown__minus-button, .dropdown__plus-button { 
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.dropdown__minus-button {
+  order: 1;
+  border-color: $dark-25;
+}
+.dropdown__minus-button::after, .dropdown__plus-button::after, .dropdown__plus-button::before {
+  position: absolute;
+  content: '';
+  height: 1px;
+} 
+.dropdown__minus-button::after {
+  top: 15px;
+  left: 11.5px;
+  width: 4.7px;
+  background: $dark-50;
+}
+.dropdown__plus-button {
+  order: 3;
+  border-color: $dark-50;
+  opacity: 50%;
+}
+.dropdown__plus-button::after, .dropdown__plus-button::before {
+  left: 10px;
+  width: 8px;
+  background: $dark-100;
+}
+.dropdown__plus-button::before {
+  transform: rotate(90deg);
+}
+.dropdown__minus-button_transparent, .dropdown__plus-button_transparent {
+  opacity: 50%;
 }

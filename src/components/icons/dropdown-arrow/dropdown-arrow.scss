@@ -1,21 +1,21 @@
-.dropdown-icon {
+.dropdown-arrow {
   width: 40px;
   height: 24px;
   position: relative;
   opacity: 50%;
 }
-.dropdown-arrow, .dropdown-arrow::after {
+.dropdown-arrow__arrow, .dropdown-arrow__arrow::after {
   position: absolute;
   background: $dark-100;
 }
-.dropdown-arrow {
+.dropdown-arrow__arrow {
   top: 13px;
   left: 13px;
   width: 8px;
   height: 2px;
   transform: rotate(45deg);
 }
-.dropdown-arrow::after {
+.dropdown-arrow__arrow::after {
   content: '';
   width: 2px;
   height: 7px;
@@ -26,6 +26,6 @@
 .dropdown-arrow_dark {
   opacity: 75%;
 }
-.dropdown-arrow_rotate {
+.dropdown-arrow_expand {
   transform: rotate(180deg);
 }

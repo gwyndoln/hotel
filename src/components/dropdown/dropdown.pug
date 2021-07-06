@@ -1,6 +1,39 @@
-include dropdown-button/dropdown-button
-include dropdown-menu/dropdown-menu
+include ../icons/dropdown-arrow/dropdown-arrow
+include ../apply-box/apply-box
 
 mixin dropdown(options)
+
+  if !options
+    - options = {}
+  if !options.items
+    - options.items = []
+
+  -
+    var buttonClassName = 'text-field dropdown__button'
+    buttonClassName += options.width ? ` text-field_width_${options.width}` : '' //mini, middle, '' - max
+    buttonClassName += options.class ? ` ${options.class}-button` : ''
+
+    var menuClassName = 'dropdown__menu'
+    menuClassName += options.applicable ? ' dropdown_applicable' : ''
+    menuClassName += options.clear ? ' dropdown_applicable-clear' : ''
+
+    var minusButtonClassName = 'dropdown__minus-button'
+    minusButtonClassName += options.minusTransparent ? ' dropdown__minus-button_transparent' : ''
+
+    var plusButtonClassName = 'dropdown__plus-button'
+    plusButtonClassName += options.plusTransparent ? ' dropdown__plus-button_transparent' : ''
+
   .dropdown
-    block
+    button(type='button', class = buttonClassName)
+      p.dropdown__button-text= options.text
+      +dropdown-arrow({isDark: options.isDark})
+    ul(class = menuClassName)
+      for item in options.items
+        li.dropdown__item
+          h3.dropdown__text= item.text
+          .dropdown__counter
+            h3.dropdown__counter-count= item.count
+            button(type='button' class = minusButtonClassName)
+            button(type='button' class = plusButtonClassName)
+      .dropdown__apply-box
+        +apply-box

@@ -6,6 +6,7 @@ mixin like-button(options)
   -
     var likeButtonClassName = 'like-button'
     likeButtonClassName += options.active ? ' like-button_active' : ''
+    likeButtonClassName += options.class ? ` ${options.class}` : ''
 
   div(class= likeButtonClassName)
     .heart
